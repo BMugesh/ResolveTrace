@@ -1,0 +1,123 @@
+# ResolveTrace — SpotifyCares Intent Taxonomy
+# Version: 1.0.0 (Frozen for evaluation)
+
+intents:
+  SUBSCRIPTION_BILLING_PREMIUM:
+    name: "SUBSCRIPTION_BILLING_PREMIUM"
+    description: "Inquiries regarding Premium subscriptions, recurring charges, unexpected fees, payment method updates, refunds, and pricing."
+    inclusion_criteria: "Mentions payment, credit card, invoices, charges, double billing, subscription cancellation, or Premium activation issues."
+    exclusion_criteria: "Questions purely about student discount verifications (see STUDENT_DISCOUNT_HULU) or Family plan invitations (see FAMILY_PLAN_SETUP)."
+    examples:
+      - "Why was I charged twice this month for Spotify Premium?"
+      - "I cancelled my subscription but you still took $9.99 from my account. Need a refund."
+      - "My card was declined when trying to renew my premium subscription."
+
+  STUDENT_DISCOUNT_HULU:
+    name: "STUDENT_DISCOUNT_HULU"
+    description: "Issues related to Spotify Student discount re-verification via SheerID/UNiDAYS or bundled Hulu/Showtime activation."
+    inclusion_criteria: "Mentions student renewal, SheerID verification, student plan reauthorization, or Hulu bundle access errors."
+    exclusion_criteria: "General subscription queries without mention of student status or Hulu bundle."
+    examples:
+      - "My student discount expired and SheerID won't verify my university email."
+      - "Reauthorized my student plan but now I can't log in to Hulu through Spotify."
+      - "How do I renew my Spotify student discount for another year?"
+
+  FAMILY_PLAN_SETUP:
+    name: "FAMILY_PLAN_SETUP"
+    description: "Management and member invitation issues on Spotify Premium Family plans."
+    inclusion_criteria: "Mentions family plan member invitations, address matching failures, error code 3 during family joining."
+    exclusion_criteria: "General billing inquiries about family plan cost (unless specifically regarding invite/address setup)."
+    examples:
+      - "Trying to add my brother to my family plan but it says addresses do not match."
+      - "Getting error code 3 when clicking the invite link to join family plan."
+      - "How do I change the home address on our Spotify family plan?"
+
+  ACCOUNT_ACCESS_AUTH:
+    name: "ACCOUNT_ACCESS_AUTH"
+    description: "Account login failures, password resets, compromised/hacked accounts, email changes, and Facebook authentication issues."
+    inclusion_criteria: "Customer cannot log in, forgot password, credentials rejected, account compromised/email changed by third party."
+    exclusion_criteria: "Payment or billing issues where user is already logged in."
+    examples:
+      - "My account was hacked and someone changed my associated email address."
+      - "Password reset link is not arriving in my inbox."
+      - "I cannot log in via Facebook after the recent update."
+
+  PLAYBACK_STREAMING_AUDIO:
+    name: "PLAYBACK_STREAMING_AUDIO"
+    description: "Streaming playback failures, song skipping, buffering, audio distortion, sudden playback stops, and volume issues."
+    inclusion_criteria: "Customer reports active playback failing, songs stuttering/stopping after few seconds, or audio silence."
+    exclusion_criteria: "Offline downloaded tracks failing (see OFFLINE_SYNC_DOWNLOADS) or Bluetooth device disconnects (see DEVICE_INTEGRATION_CONNECT)."
+    examples:
+      - "Spotify keeps skipping tracks after 3 seconds of playing."
+      - "Music stops playing as soon as my phone screen locks."
+      - "Songs won't buffer and get stuck with spinning wheel on LTE."
+
+  OFFLINE_SYNC_DOWNLOADS:
+    name: "OFFLINE_SYNC_DOWNLOADS"
+    description: "Issues downloading songs for offline listening, sync errors, or local files missing."
+    inclusion_criteria: "Mentions offline mode, downloaded playlists disappearing, sync stuck at 0%, or offline storage limits."
+    exclusion_criteria: "General streaming playback issues when online."
+    examples:
+      - "My downloaded offline songs disappeared after I restarted the app."
+      - "Playlist won't download for offline listening, stuck on waiting to download."
+      - "Why are my local files greyed out and not syncing to my mobile device?"
+
+  APP_CRASH_BUG:
+    name: "APP_CRASH_BUG"
+    description: "App instability, crashing upon launch or action, black/blank screen, severe UI freezing, and runtime error popups."
+    inclusion_criteria: "App forcefully closes, crashes immediately on open, displays blank screen, or freezes unresponsive."
+    exclusion_criteria: "Slow audio streaming without app crash."
+    examples:
+      - "Spotify crashes instantly every time I open the app on Android 8.0."
+      - "Getting a black blank screen when opening the desktop application."
+      - "The app freezes completely whenever I tap on the search tab."
+
+  PLAYLIST_LIBRARY_CATALOG:
+    name: "PLAYLIST_LIBRARY_CATALOG"
+    description: "Playlist organization, missing songs/albums from the catalog, greyed-out unplayable tracks, library sorting, and search."
+    inclusion_criteria: "Inquiries about songs disappearing from playlists, greyed-out titles, album availability, or search index problems."
+    exclusion_criteria: "Inquiries by artists attempting to upload music (see ARTIST_CONTENT_INQUIRY)."
+    examples:
+      - "Why are all Taylor Swift songs greyed out in my country now?"
+      - "My favorite playlist with 200 songs was accidentally deleted, can you restore it?"
+      - "Why is an album available on desktop but missing from mobile search?"
+
+  DEVICE_INTEGRATION_CONNECT:
+    name: "DEVICE_INTEGRATION_CONNECT"
+    description: "Spotify Connect, Bluetooth speaker pairing, smart speakers (Alexa, Google Home, Sonos), CarPlay, Android Auto, consoles (PS4, Xbox)."
+    inclusion_criteria: "Mentions hardware integration, smart speaker voice commands, Spotify Connect device picker, car audio systems."
+    exclusion_criteria: "Built-in device playback errors without external accessories."
+    examples:
+      - "Spotify Connect won't discover my Sonos speaker on the same WiFi network."
+      - "Alexa says Spotify is playing but no sound comes out of Echo Dot."
+      - "App crashes whenever I connect my phone to Apple CarPlay."
+
+  ARTIST_CONTENT_INQUIRY:
+    name: "ARTIST_CONTENT_INQUIRY"
+    description: "Questions from artists regarding song distribution, profile claiming, aggregator submission, or artist analytics."
+    inclusion_criteria: "Inquiries about putting original music on Spotify, claiming Spotify for Artists profile, or distributor links."
+    exclusion_criteria: "Listener inquiries about public music listening."
+    examples:
+      - "How can an independent artist get music on Spotify without a record label?"
+      - "My song went live but is under another artist's profile with the same name."
+      - "How do I claim my Spotify for Artists verified page?"
+
+  GENERAL_INQUIRY_FEEDBACK:
+    name: "GENERAL_INQUIRY_FEEDBACK"
+    description: "General product questions, UI design feedback, feature requests, tablet mode inquiries, or compliments/complaints."
+    inclusion_criteria: "Inquiries about feature availability, user experience feedback, general questions that do not fit technical failure categories."
+    exclusion_criteria: "Specific technical failures matching concrete categories above."
+    examples:
+      - "Will tablet UI mode work on a 9.6-inch Samsung Galaxy Tab E?"
+      - "Please bring back the old lyric feature in the desktop app."
+      - "Is there a way to sort saved albums alphabetically by release year?"
+
+  AMBIGUOUS_INQUIRY:
+    name: "AMBIGUOUS_INQUIRY"
+    description: "Extremely sparse, single-word, or unintelligible customer tweets where the underlying intent cannot be determined."
+    inclusion_criteria: "Tweets with fewer than 3 words (e.g. '@SpotifyCares help'), non-text media only, or uninterpretable gibberish."
+    exclusion_criteria: "Any tweet containing identifiable issue keywords."
+    examples:
+      - "@SpotifyCares help"
+      - "@SpotifyCares ????"
+      - "spotify sucks"

@@ -1,0 +1,50 @@
+# ResolveTrace — Decision Engine & Playbook Thresholds
+# All thresholds are configurable and separated from core logic.
+
+pathway:
+  # Minimum supporting conversation instances required to promote a pathway to ACTIVE status
+  minimum_evidence: 4
+  # Minimum Bayesian-shrunk confidence score required to trust a pathway
+  minimum_confidence: 0.55
+  # Bayesian Laplace prior strength (smoothing parameter)
+  laplace_prior_weight: 2.0
+  # Base default success prior for outcome weighting
+  base_success_prior: 0.50
+
+conflict:
+  # Margin delta: If (P1_score - P2_score) < delta between distinct action families, a conflict is detected
+  delta: 0.08
+
+unknown:
+  # Threshold tau: If top pathway match score < tau or intent unmapped, case is marked UNKNOWN
+  threshold_tau: 0.50
+
+automation:
+  # Minimum composite automation score required to allow autonomous AUTO-HANDLE
+  threshold_automation: 0.55
+  # Component weights for composite score:
+  weights:
+    w_intent: 0.30
+    w_pathway: 0.35
+    w_evidence: 0.20
+    w_drift: 0.10
+    w_risk: 0.15
+
+drift:
+  # Number of temporal windows (chronological bins) for JSD calculation
+  num_windows: 4
+  # Jensen-Shannon Divergence threshold above which a pathway is flagged as experiencing significant drift
+  threshold_jsd: 0.28
+  # Minimum samples per window to evaluate drift without false alarms on sparse data
+  min_samples_per_window: 10
+
+risk:
+  # Risk penalty weights (0.0 to 1.0)
+  levels:
+    LOW: 0.0
+    MEDIUM: 0.25
+    HIGH: 0.70
+  # High-risk intent triggers requiring strict escalation unless pathway is extremely confident
+  high_risk_intents:
+    - "ACCOUNT_ACCESS_AUTH"
+    - "SUBSCRIPTION_BILLING_PREMIUM"

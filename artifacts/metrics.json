@@ -1,0 +1,100 @@
+{
+  "ablation_table": {
+    "Majority": {
+      "intent_macro_f1": 0.014,
+      "pathway_accuracy": null,
+      "unknown_f1": null,
+      "conflict_f1": null,
+      "reply_quality": null,
+      "false_auto_handling": null,
+      "coverage": null
+    },
+    "TF-IDF + LR": {
+      "intent_macro_f1": 0.7644,
+      "pathway_accuracy": null,
+      "unknown_f1": null,
+      "conflict_f1": null,
+      "reply_quality": null,
+      "false_auto_handling": null,
+      "coverage": null
+    },
+    "Semantic RAG": {
+      "intent_macro_f1": null,
+      "pathway_accuracy": 0.5314,
+      "unknown_f1": 0.0,
+      "conflict_f1": 0.0,
+      "reply_quality": 4.62,
+      "false_auto_handling": 0.0966,
+      "coverage": 1.0
+    },
+    "RAG + Intent": {
+      "intent_macro_f1": 0.7644,
+      "pathway_accuracy": 0.5362,
+      "unknown_f1": 0.0,
+      "conflict_f1": 0.0,
+      "reply_quality": 4.72,
+      "false_auto_handling": 0.0966,
+      "coverage": 1.0
+    },
+    "Support Playbook": {
+      "intent_macro_f1": 0.7644,
+      "pathway_accuracy": 0.6039,
+      "unknown_f1": 0.0,
+      "conflict_f1": 0.0,
+      "reply_quality": 4.73,
+      "false_auto_handling": 0.0966,
+      "coverage": 1.0
+    },
+    "+ Conflict/Unknown": {
+      "intent_macro_f1": 0.7644,
+      "pathway_accuracy": 0.6039,
+      "unknown_f1": 0.4242,
+      "conflict_f1": 0.82,
+      "reply_quality": 4.81,
+      "false_auto_handling": 0.0426,
+      "coverage": 0.6812
+    },
+    "+ Drift/Risk (ResolveTrace)": {
+      "intent_macro_f1": 0.7644,
+      "pathway_accuracy": 0.6039,
+      "unknown_f1": 0.4242,
+      "conflict_f1": 0.88,
+      "reply_quality": 4.82,
+      "false_auto_handling": 0.0432,
+      "coverage": 0.6715
+    }
+  },
+  "human_judge_agreement": {
+    "spearman_rho": 0.0548,
+    "p_value": 0.7370839621299059,
+    "mae": 0.287,
+    "human_mean": 4.5,
+    "judge_mean": 4.68
+  },
+  "stratified_pathway_accuracy": {
+    "ACTIVE": {
+      "cases": 95,
+      "share": 0.4589,
+      "correct": 66,
+      "accuracy": 0.6947
+    },
+    "PROBATION": {
+      "cases": 99,
+      "share": 0.4783,
+      "correct": 51,
+      "accuracy": 0.5152
+    },
+    "SPARSE": {
+      "cases": 13,
+      "share": 0.0628,
+      "correct": 8,
+      "accuracy": 0.6154
+    }
+  },
+  "summary": {
+    "total_test_cases": 207,
+    "final_coverage": 0.6715,
+    "final_false_auto_handling_rate": 0.0432,
+    "final_unknown_f1": 0.4242
+  }
+}

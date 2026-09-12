@@ -1,0 +1,31 @@
+# ResolveTrace — System Configuration
+
+system:
+  name: "ResolveTrace"
+  brand: "SpotifyCares"
+  version: "1.0.0"
+  random_seed: 42
+
+paths:
+  raw_twcs_csv: "twcs/twcs.csv"
+  spotify_filtered_csv: "spotify_cares_filtered_threads.csv"
+  spotify_turn_csv: "spotify_cares_turn_structure.csv"
+  processed_conversations_jsonl: "data/processed/spotify_conversations.jsonl"
+  train_conversations_jsonl: "data/processed/train_conversations.jsonl"
+  val_conversations_jsonl: "data/processed/val_conversations.jsonl"
+  test_conversations_jsonl: "data/processed/test_conversations.jsonl"
+  sample_threads_csv: "data/sample/sample_spotify_threads.csv"
+  golden_set_csv: "data/golden/golden_set.csv"
+  drift_challenge_csv: "data/golden/drift_challenge_set.csv"
+  playbook_json: "artifacts/playbook.json"
+  dataset_stats_json: "artifacts/dataset_stats.json"
+  dataset_report_md: "artifacts/dataset_report.md"
+  metrics_json: "artifacts/metrics.json"
+  pathway_metrics_json: "artifacts/pathway_metrics.json"
+  safety_curve_plot: "artifacts/figures/automation_safety_curve.png"
+
+splits:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  strategy: "temporal" # Older conversations -> train, later -> val/test

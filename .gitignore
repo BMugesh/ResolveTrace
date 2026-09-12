@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+.env
+.venv
+env/
+venv/
+.DS_Store
+.streamlit/
+
+# ── Raw TWCS dataset files (download from Kaggle: see README Step 0) ──────────
+spotify_cares_filtered_threads.csv
+spotify_cares_turn_structure.csv
+twcs.csv
+
+# ── Generated / reproducible processed splits (rebuilt by build_dataset.py) ──
+data/processed/spotify_conversations.jsonl
+data/processed/train_conversations.jsonl
+data/processed/val_conversations.jsonl
+data/processed/test_conversations.jsonl
+
+# ── Verbose generation telemetry log (large, not a deliverable) ───────────────
+artifacts/generation_logs.jsonl

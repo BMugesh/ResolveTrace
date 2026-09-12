@@ -1,0 +1,359 @@
+tweet_id,author_id,inbound,created_at,text,response_tweet_id,in_response_to_tweet_id
+262265,SpotifyCares,False,Thu Oct 05 22:13:26 +0000 2017,@178472 2: the first six and the last four digits of that payment card? We'll track it down for you /RR https://t.co/ldFdZRiNAt,,262266.0
+262266,178472,True,Thu Oct 05 20:51:26 +0000 2017,@SpotifyCares Someone at our company used the company credit card to sign up for a subscription that we want to cancel.  Please advise ASAP,"262265,262267",
+262268,SpotifyCares,False,Thu Oct 05 22:04:22 +0000 2017,@178473 Hi. Can you try reinstalling the app using the steps here: https://t.co/EqisDMwZAT? Keep us posted /LM,262269,262270.0
+262269,178473,True,Thu Oct 05 22:06:52 +0000 2017,@SpotifyCares Already did!,262271,262268.0
+262271,SpotifyCares,False,Thu Oct 05 22:08:51 +0000 2017,@178473 Can you send us a screenshot of how your app looks? We'll see what else we can suggest /LM,262272,262269.0
+262272,178473,True,Thu Oct 05 22:09:37 +0000 2017,@SpotifyCares  https://t.co/1Cmu2SBwPU,262273,262271.0
+262273,SpotifyCares,False,Thu Oct 05 22:11:11 +0000 2017,@178473 Can you try using a different internet connection and see if it makes a difference? /LM,,262272.0
+262270,178473,True,Thu Oct 05 20:43:39 +0000 2017,"@SpotifyCares my iOS app isn't even letting me select the option to login, help?",262268,
+262274,SpotifyCares,False,Thu Oct 05 22:04:08 +0000 2017,"@164069 Hey Terence, help's here! We just replied to your DM. Let's carry on chatting there 🙂 /RR",,262275.0
+262275,164069,True,Thu Oct 05 20:42:10 +0000 2017,@SpotifyCares I have no reception at all. Please help!!! Love the app💋😃,262274,
+262276,SpotifyCares,False,Thu Oct 05 22:03:41 +0000 2017,@178474 Hi there. Can you DM us your account's email address? We'll take a look backstage /LM https://t.co/ldFdZRiNAt,,262277.0
+262277,178474,True,Thu Oct 05 20:43:18 +0000 2017,"Hey @115888, what's up with me having to update my payment info every month? It's getting annoying.",262276,
+262278,SpotifyCares,False,Thu Oct 05 22:02:52 +0000 2017,"@178475 Hey Erin! Fingers crossed we'll be able to have it soon, but there's info about Spotify content here: https://t.co/0i8GpimuDa /NG",262279,262280.0
+262279,178475,True,Thu Oct 05 22:04:37 +0000 2017,"@SpotifyCares Wow Spotify really does care, nothing but respect for my streaming service https://t.co/03hRkCRRZP",262281,262278.0
+262281,SpotifyCares,False,Thu Oct 05 22:12:59 +0000 2017,"@178475 Thanks for the sweet comment! If anything comes up, you know where to find us. Have a... https://t.co/OdbkcWnbGH 💚 /NG",,262279.0
+262280,178475,True,Thu Oct 05 21:51:20 +0000 2017,When will Harry’s cover of The Chain be put on Spotify I’m tired of waiting,262278,
+262282,SpotifyCares,False,Thu Oct 05 22:01:16 +0000 2017,"@178476 Hey Tom! We’d love to have everything available, but we have some info about content here: https://t.co/0i8GpimuDa /NG",,262283.0
+262283,178476,True,Thu Oct 05 21:39:45 +0000 2017,daily tweet saying how annoyed i am that Pabllo Vittar's music is not on spotify UK. sort it out @13399 @SpotifyCares @116130,262282,
+262649,SpotifyCares,False,Thu Oct 05 22:23:54 +0000 2017,@178566 Hi there! Can you let us know where you got this info? We'll take a look backstage /LM,262650,262651.0
+262650,178566,True,Thu Oct 05 22:33:06 +0000 2017,@SpotifyCares Thanks. Still works for me thankfully. Is a great feature. Please don't remove it!,262652,262649.0
+262652,178566,True,Thu Oct 05 22:33:53 +0000 2017,"@SpotifyCares Oh and it was here...
+https://t.co/pbi8OwV7q2",262653,262650.0
+262653,SpotifyCares,False,Thu Oct 05 22:38:50 +0000 2017,"@178566 Thanks! We can confirm that this isn't true. Syncing local files won't be removed on the next update. Any other questions, just shout /LM",,262652.0
+262651,178566,True,Thu Oct 05 20:56:18 +0000 2017,Is this true @SpotifyCares https://t.co/eYOxB68EGn,262649,
+262654,SpotifyCares,False,Thu Oct 05 22:23:24 +0000 2017,@178567 Hey Mary! Can you DM us your username or email address? We'll take a look backstage /LO https://t.co/ldFdZRiNAt,,262655.0
+262655,178567,True,Thu Oct 05 21:21:38 +0000 2017,@115888 I like the Spotify and @115940 plan. I just wish I could add on a premium network 😩 you should make it so we can add it on our acct,262654,
+262656,SpotifyCares,False,Thu Oct 05 22:22:31 +0000 2017,@178568 Hey Håkon! We've just sent you a bit more info over DM. We'll carry on helping out there /CO,,262657.0
+262657,178568,True,Thu Oct 05 21:04:30 +0000 2017,I need some help with my spotify acount. I lost all my playlists. How can I get them back? @SpotifyCares,262656,
+262658,SpotifyCares,False,Thu Oct 05 22:20:03 +0000 2017,@178569 Hey Jonathan! Can you let us know the exact Spotify version you're running? We'll see what we can suggest /NG,262659,262660.0
+262659,178569,True,Tue Oct 24 15:42:15 +0000 2017,"@SpotifyCares I’m running Spotify 8.4.22.515 and iOS 11.0.3
+Spotify songs don’t show on my lock screen while playing anymore.",262661,262658.0
+262661,SpotifyCares,False,Tue Oct 24 16:40:22 +0000 2017,"@178569 Hey Jonathan, help's here! Could you DM us your account's username and email address? We'll take a look backstage for you /BX https://t.co/ldFdZRiNAt",,262659.0
+262660,178569,True,Thu Oct 05 21:13:29 +0000 2017,@AppleSupport is there a fix/iOS update coming for the issues with controlling @SpotifyCares or showing songs on lock screen?,262658,
+262662,SpotifyCares,False,Thu Oct 05 22:20:02 +0000 2017,"@178570 Hi Nadira, sorry for the delay! We just replied to your DM. Let's carry on chatting there 🙂 /RR",,262663.0
+262663,178570,True,Thu Oct 05 21:15:40 +0000 2017,"@SpotifyCares help, I can’t add my sister in to my family plan, error 3 appears",262662,
+262664,SpotifyCares,False,Thu Oct 05 22:15:21 +0000 2017,"@178571 Hey Pernille! Can you let us know your device, operating system, and Spotify version? We'll see what we can suggest /JP",262665,262666.0
+262665,178571,True,Fri Oct 06 09:17:04 +0000 2017,@SpotifyCares Windows10 - latest desktop version. :) &lt;3,262667,262664.0
+262667,SpotifyCares,False,Fri Oct 06 10:44:30 +0000 2017,@178571 Thanks. Can you tell us more about what's happening? Does the same thing happen on other devices? /AY,,262665.0
+262666,178571,True,Thu Oct 05 20:59:36 +0000 2017,@SpotifyCares the new search is horrible - huge step backward,"262664,262668",
+262669,SpotifyCares,False,Thu Oct 05 22:15:19 +0000 2017,"@178572 Hey Timothy! That doesn't sound good. Does logging out, restarting your Mac, then logging back in help at all? /QI",,262670.0
+262670,178572,True,Thu Oct 05 21:00:22 +0000 2017,@115888 Any reason Spotify on Mac is running.. so... slowly?  Any fix besides reinstall (which isn't actually a fix)?  Thanks.,262669,
+262671,SpotifyCares,False,Thu Oct 05 22:13:41 +0000 2017,"@178573 2: Can you also let us know the device, operating system, and Spotify version you're using? We'll see what we can suggest /JE",,262672.0
+262672,178573,True,Thu Oct 05 20:53:57 +0000 2017,@115888 your mobile apps are so full of bugs!!! Dislike 1 song won't let you like or dislike anyother song for the next 200 songs.,"262671,262673",
+311959,SpotifyCares,False,Sat Oct 07 03:37:00 +0000 2017,"@178573 Thanks. Can you try logging out of Spotify, restarting your device, and logging back in to see if that helps? /NY",,311960.0
+311960,178573,True,Sat Oct 07 03:03:30 +0000 2017,"@SpotifyCares Yes, I've done the steps. OS: Silent OS, Device: Black Phone 2",311959,262673.0
+262673,SpotifyCares,False,Thu Oct 05 22:13:19 +0000 2017,"@178573 1: Hey Adam, that doesn't sound right. Just to be sure, have you checked this: https://t.co/0rSgxqRAv0?",311960,262672.0
+393671,SpotifyCares,False,Mon Oct 09 17:24:24 +0000 2017,"@209250 Hey, help's here. Can you let us know the device, OS, and Spotify version you're using? We'll see what we can suggest /KL",,393672.0
+393672,209250,True,Mon Oct 09 16:36:33 +0000 2017,@115888 has me all the way fucked up because I CANT PLAY HALF MY MUSIC.,393671,393673.0
+393673,209250,True,Mon Oct 09 16:35:58 +0000 2017,So many companies whom service me has me fucked up.. I should make a thread.,393672,
+393674,SpotifyCares,False,Mon Oct 09 17:23:16 +0000 2017,"@209251 Hey Lindsae, that's odd! Can you try updating your zip code here: https://t.co/cnaaFIwigZ? Let us know how it goes /KL",393675,393676.0
+393675,209251,True,Mon Oct 09 22:45:39 +0000 2017,"@SpotifyCares Zip code is correct, weird!",,393674.0
+393676,209251,True,Mon Oct 09 16:24:15 +0000 2017,"How does one change their location on @115888? My app thinks I’m in Ohio, which I’m sure is a nice place.. but I’m in Arizona.","393674,393677",
+393678,SpotifyCares,False,Mon Oct 09 17:16:11 +0000 2017,@209252 Hey Katy! Your Daily Mixes should improve as they get to know you. Keep adding your fav tracks to Your Library/playlists 🙂 /MX,,393679.0
+393679,209252,True,Mon Oct 09 16:27:19 +0000 2017,@115888 I LOVE my daily mixes but why aren’t @130008 in any of them? I listen to them ALL the time and they’ve never been on it... https://t.co/eCyc6AB4Ss,393678,
+409782,SpotifyCares,False,Mon Oct 09 23:18:56 +0000 2017,@209251 Got it. Can you send us a screenshot of what you're seeing? We'll be right here waiting /KL,409783,409784.0
+409783,209251,True,Thu Oct 19 02:21:38 +0000 2017,"@SpotifyCares it finally showed up again, here ya go. https://t.co/nEBC58Mvns",409785,409782.0
+409785,SpotifyCares,False,Thu Oct 19 03:47:27 +0000 2017,@209251 Hmm. Could you DM us your account's email address or username? We'll take a look under the hood /KB https://t.co/ldFdZRiNAt,409786,409783.0
+409786,209251,True,Thu Oct 19 15:30:37 +0000 2017,"@SpotifyCares sent, thanks digging!",,409785.0
+409784,209251,True,Mon Oct 09 22:46:35 +0000 2017,@212721 @115888 Yeah the zip on my account is Phoenix so it's definitely strange!,409782,393677.0
+393677,212721,True,Mon Oct 09 16:28:52 +0000 2017,"@209251 @115888 If you sign in on the web, you should be able to edit your profile. There's a zip code field that you'll need to change",409784,393676.0
+524353,SpotifyCares,False,Sat Dec 02 05:18:32 +0000 2017,@241230 No worries! Let us know if you ever need us again. We'd be... https://t.co/LgAM6kPKN3 /AN,,524354.0
+524354,241230,True,Sat Dec 02 00:57:11 +0000 2017,@241230 @SpotifyCares Fixed by reducing text size in iPhone settings. Thanks anyway.,524353,524355.0
+524355,241230,True,Fri Dec 01 23:41:10 +0000 2017,"@SpotifyCares The playlist display is messed up. Is this the app or the iPhone (7, latest iOS)? https://t.co/k0hZ5dejDI",524354,
+524356,SpotifyCares,False,Sat Dec 02 05:16:31 +0000 2017,@226805 Anytime! Let us know if you ever need us again. We'd be... https://t.co/LgAM6kPKN3 /AN,,524357.0
+524357,226805,True,Fri Dec 01 23:40:42 +0000 2017,I take it back. @SpotifyCares helped me out. Turns out the student discount has to be renewed every 12 months. It just so happened that I subscribed to Hulu when my student subscription expired. Subscribing to Hulu will not add onto your student discount! Thank you! @115888 https://t.co/DyFu00nM5O,524356,
+524358,SpotifyCares,False,Sat Dec 02 05:13:51 +0000 2017,@241231 Hey Lougi! Could you send us a DM with your account's email address or username? We'll take a look backstage /LO https://t.co/ldFdZR1cbT,,524359.0
+524359,241231,True,Fri Dec 01 23:39:31 +0000 2017,"Hey @SpotifyCares my student account reverted to a regular premium account. I reauthorized as a student, now I can't access Hulu. Help.",524358,
+524360,SpotifyCares,False,Sat Dec 02 05:05:21 +0000 2017,"@241232 Hey, great question! There are no requirements, but artists can start by choosing a distributor/aggregator that can get their music on Spotify. There's more info here: https://t.co/1k4BVkvGEX. Hope this explains it /GS",524361,524362.0
+524361,241232,True,Sat Dec 02 05:07:02 +0000 2017,@SpotifyCares @23777 I would love to see some of your songs on there,,524360.0
+524362,241232,True,Fri Dec 01 23:35:23 +0000 2017,@115888 what are the requirements before an artist can be put on your app? There’s a guy I onow@who makes music on YouTube but he isn’t on the app.,524360,
+655570,SpotifyCares,False,Thu Oct 05 12:35:54 +0000 2017,"@275954 Hey Ella! We can help out in English via Twitter, but we also have Indonesian support via email at https://t.co/ZgU70TbP8M /RS",,655571.0
+655571,275954,True,Thu Oct 05 12:27:56 +0000 2017,@118266 min kalo mau langganan tp gapunya kartu kredit gimana caranya ya? kebetulan saya pake indosat,655570,
+655576,SpotifyCares,False,Thu Oct 05 12:23:25 +0000 2017,@275957 Hey Adriaan! Thanks for the feedback – we appreciate it. We’ll get this passed onto the right team /RS,,655577.0
+655577,275957,True,Thu Oct 05 11:55:49 +0000 2017,"@115888 Just GREAT!! Even instrumental songs can be EXPLICIT, wow... 🙈😂😎 https://t.co/Dy25XsDWFS",655576,
+786451,SpotifyCares,False,Sat Oct 07 23:24:41 +0000 2017,"@307613 Hey there! We’d love to have all of their stuff available, but we have some info about content here: https://t.co/0i8GpimuDa /AP",,786452.0
+786452,307613,True,Sat Oct 07 23:15:38 +0000 2017,all these triple j’s but no arctic monkeys... @115888 @SpotifyCares https://t.co/3awmqrybuZ,786451,
+786457,SpotifyCares,False,Sat Oct 07 23:16:55 +0000 2017,@307615 Hey! We're looking into this at the moment. Thanks for reporting /JS,786458,786459.0
+786458,307615,True,Sat Oct 07 23:18:40 +0000 2017,@SpotifyCares Awesome. It's been going on for a couple days. Here's the application version I'm running. https://t.co/UDRaqCUenk,786460,786457.0
+786460,SpotifyCares,False,Sat Oct 07 23:28:06 +0000 2017,@307615 We appreciate you sending that over. Rest assured our best tech folks are on the case as we speak. Hopefully we'll have a fix soon! /JS,,786458.0
+786459,307615,True,Sat Oct 07 23:03:16 +0000 2017,"@115888 - App is crashing on a Pixel XL when attempting 2 share. Running Android 8.0.0. I've cleared cache, app storage, and reinstalled.",786457,
+786627,SpotifyCares,False,Thu Oct 12 09:38:22 +0000 2017,@307652 Can you send us a screenshot of what you're seeing on your end? We'll take a look /MA,786628,786629.0
+786628,307652,True,Thu Oct 12 09:47:11 +0000 2017,"@SpotifyCares I hope that this is what you meant, if so here you go! https://t.co/ngiotHAtRM",786630,786627.0
+786630,SpotifyCares,False,Thu Oct 12 09:52:13 +0000 2017,"@307652 Yup, that's it! Could you send us a DM with your account's email address or username? We'll take a look backstage /MA https://t.co/ldFdZRiNAt",,786628.0
+786629,307652,True,Thu Oct 12 09:31:43 +0000 2017,"@SpotifyCares I already tried, and deleted spotify and install it again and still the same issue. And it's only on my computer not on the mobile device.",786627,786631.0
+786631,SpotifyCares,False,Thu Oct 12 09:24:44 +0000 2017,@307652 Thanks. Does restarting your computer help? Are you experiencing the same issue when you're using a different device? /MA,786629,786632.0
+786632,307652,True,Thu Oct 12 09:18:13 +0000 2017,"@SpotifyCares I'm using windows desktop spotify, version: 1.0.65.320.gac7a8e02. And I have spotify family premium",786631,786633.0
+786633,SpotifyCares,False,Thu Oct 12 06:57:02 +0000 2017,"@307652 Hey there! What device, operating system, and Spotify version are you using? We'll see what we can suggest /MA",786632,786634.0
+786634,307652,True,Thu Oct 12 06:54:32 +0000 2017,"@117153 I still have some issues with Spotify, I can't listen to some people anymore like Katy Perry and Jason Derulo.",786633,
+786635,SpotifyCares,False,Thu Oct 12 09:32:29 +0000 2017,@307653 Thanks! Could you also send us a DM? We'll carry on chatting there /JO https://t.co/ldFdZRiNAt,,786636.0
+786636,307653,True,Thu Oct 12 09:23:25 +0000 2017,@SpotifyCares my username is onesimpledot,786635,786637.0
+786637,SpotifyCares,False,Thu Oct 12 08:54:40 +0000 2017,"@307653 Hi Daniel, could you send over your account's username or email address? We'll take a look backstage /JO https://t.co/ldFdZRiNAt",786636,786638.0
+786638,307653,True,Thu Oct 12 08:48:02 +0000 2017,Ehhm. @4984 https://t.co/Ag5epT7odu,786637,
+786846,SpotifyCares,False,Thu Oct 12 09:57:37 +0000 2017,@232224 1. Hey! You can check this link https://t.co/38J7tFlIBF for more info on why this could've happened and what steps to do next.,,786847.0
+786847,232224,True,Thu Oct 12 09:48:45 +0000 2017,Any ideas why all my @115888 downloads have cleared themselves?,"786846,786848",
+786849,SpotifyCares,False,Thu Oct 12 09:52:18 +0000 2017,@307707 Hey Ray! Can you DM us your account's username or email address? We'll take a look under the hood /RS https://t.co/ldFdZRiNAt,,786850.0
+786850,307707,True,Thu Oct 12 09:35:44 +0000 2017,So apparently when you're abroad for more than 2 weeks @115888 shits the bed and doesn't let you listen to music😒,786849,
+788755,SpotifyCares,False,Thu Oct 12 11:05:15 +0000 2017,"@232224 2. If you need us again, just give us a shout. We're... https://t.co/zOXI69QSqg /KM",,788756.0
+788756,232224,True,Thu Oct 12 09:59:48 +0000 2017,"@SpotifyCares None of those are applicable. Sorted it now anyway, just curious to why it happened in the first place","788755,788757",786848.0
+786848,SpotifyCares,False,Thu Oct 12 09:57:51 +0000 2017,@232224 2. Just click on “Downloads unexpectedly removed”. Hope this helps /KM,788756,786847.0
+788757,SpotifyCares,False,Thu Oct 12 11:05:02 +0000 2017,"@232224 1. The reasons for desyncing are varied depending on the device you're using, but we're glad everything's working again.",,788756.0
+918047,SpotifyCares,False,Tue Oct 10 18:21:47 +0000 2017,@337946 Anytime! Let us know if you ever need us again. We'd be... https://t.co/LgAM6ky9Vv /MX,,918048.0
+918048,337946,True,Tue Oct 10 17:57:12 +0000 2017,@SpotifyCares Aweshine!,918047,918049.0
+918049,SpotifyCares,False,Tue Oct 10 11:12:34 +0000 2017,"@337946 Hey Kristian, thanks for the feedback! Don't worry, we'll let the right team know it's something you'd like to do in the future 🙂 /JN",918048,918050.0
+918050,337946,True,Tue Oct 10 10:30:02 +0000 2017,"Hey @115888, pls make it easy to play a new album. If I choose a new album, I want it to play now. Spotify via Sonis is sooo much better",918049,
+1048605,SpotifyCares,False,Fri Oct 13 00:42:13 +0000 2017,@367817 2:  They'll work with our team to make sure your artist page gets fixed up /NS,1048606,1048607.0
+1048606,367817,True,Fri Oct 13 00:42:59 +0000 2017,"@SpotifyCares No worries, thank you very much!",1048608,1048605.0
+1048608,SpotifyCares,False,Fri Oct 13 00:47:55 +0000 2017,@367817 You're welcome! Let us know if you ever need us again. We'd be... https://t.co/LgAM6ky9Vv 🙂 /NS,,1048606.0
+1048607,367817,True,Fri Oct 13 00:16:52 +0000 2017,"@SpotifyCares hi, my song has just recently gone live, but is under someone else’s profile (with the same name) any chance of my own profile","1048605,1048609",
+1048609,SpotifyCares,False,Fri Oct 13 00:42:05 +0000 2017,"@367817 1: Hey Danny, sorry about that! We’d recommend reaching out to your distributor/aggregator.",,1048607.0
+1048619,SpotifyCares,False,Fri Oct 13 00:31:29 +0000 2017,@367820 Hey there! Can you let us know your account's email address and username? We'll take a look backstage for you /JX,1048620,1048621.0
+1048620,367820,True,Fri Oct 13 00:39:09 +0000 2017,"@SpotifyCares Email: __email__ 
+
+Username: sbstnvlnvia",1048622,1048619.0
+1048622,SpotifyCares,False,Fri Oct 13 00:49:36 +0000 2017,@367820 We're having trouble finding an account with that information. Could you DM us any other email addresses that could've been used? /JX https://t.co/ldFdZRiNAt,1048623,1048620.0
+1048623,367820,True,Fri Oct 13 04:04:23 +0000 2017,@SpotifyCares I sent a dm,1048624,1048622.0
+1048624,SpotifyCares,False,Fri Oct 13 04:13:46 +0000 2017,@367820 We've replied to your DM - let's carry on chatting there. We'd also suggest deleting your previous tweets as they contain private info /RI,,1048623.0
+1048621,367820,True,Fri Oct 13 00:01:37 +0000 2017,"@SpotifyCares I have two pending payments of 4.99 on my visa prepaid card, chose the wrong option twice, need refund to get to pay 9.99",1048619,
+1048857,SpotifyCares,False,Mon Oct 23 07:27:54 +0000 2017,"@213028 Hey, help's here! Can you DM us your account's email address? We'll check backstage /GK https://t.co/ldFdZRiNAt",,1048858.0
+1048858,213028,True,Mon Oct 23 05:01:37 +0000 2017,"Hey @SpotifyCares @115888 @351 ""70's love groove"" needs to be streamable",1048857,
+1048993,SpotifyCares,False,Sat Oct 14 20:35:23 +0000 2017,"@367915 Hey Blair! Don’t worry, we can help. What’s happening exactly? Can you let us know the device/OS you’re using? /TB",,1048994.0
+1048994,367915,True,Sat Oct 14 15:50:43 +0000 2017,"If  @115888  would contact me before I cancel their account, that'd be great.",1048993,
+1048995,SpotifyCares,False,Sat Oct 14 20:32:25 +0000 2017,@367916 Hey there! Can you DM us your account's email address and username? We'll take a look backstage /SU https://t.co/ldFdZRiNAt,,1048996.0
+1048996,367916,True,Sat Oct 14 15:49:13 +0000 2017,my name couldn't be confirmed for spotify student but i still got charged. when do i get my money back? @SpotifyCares,1048995,
+1049055,SpotifyCares,False,Fri Oct 13 00:56:13 +0000 2017,@367939 Thanks. We'll get this reported. Great detective work! https://t.co/LpsmyUtme0 /MT,,1049056.0
+1049056,367939,True,Fri Oct 13 00:20:06 +0000 2017,@SpotifyCares page for band 'GTO' combines 2 groups - plz split pre-1998 (which matches the description) from the post-2000 rock group :),1049055,
+1179881,SpotifyCares,False,Tue Oct 24 21:57:35 +0000 2017,"@397481 Hey there, we'd love to help! Can you let us know where you're currently located? /JP",1179882,1179883.0
+1179882,397481,True,Wed Oct 25 15:41:32 +0000 2017,"@SpotifyCares Hi, I am in the Faroe Islands",1179884,1179881.0
+1179884,SpotifyCares,False,Wed Oct 25 15:47:31 +0000 2017,@397481 Thanks! We've just replied to your DM. Let's continue chatting there /JP,,1179882.0
+1179883,397481,True,Tue Oct 24 21:41:32 +0000 2017,@SpotifyCares. Why can't I sign up for an account. Have tried 1000 times today and the site is loading... and loading ... and loading...,1179881,
+1179885,SpotifyCares,False,Tue Oct 24 21:57:33 +0000 2017,@397482 Hi there! Could you send us your account's email address via DM? We'll take a look under the hood /LP https://t.co/ldFdZRiNAt,,1179886.0
+1179886,397482,True,Tue Oct 24 21:38:34 +0000 2017,@SpotifyCares I can’t find my username and I need help please need to change setting on my account,1179885,
+1179887,SpotifyCares,False,Tue Oct 24 21:54:20 +0000 2017,@397483 Hey there! Can you give us more info about what's happening? We'll see what we can suggest /KL,,1179888.0
+1179888,397483,True,Tue Oct 24 21:32:25 +0000 2017,Argh @116130 @SpotifyCares keeps crashing 😭😭 send help!,1179887,
+1179890,SpotifyCares,False,Tue Oct 24 21:50:38 +0000 2017,"@397484 Are you getting any specific error messages? If so, can you send us a screenshot of it? That'll be really helpful /AG",,1179891.0
+1179891,397484,True,Tue Oct 24 21:16:54 +0000 2017,@SpotifyCares No I've tried that as well as resetting the cache and uninstalling on both devices,1179890,1179892.0
+1179892,397484,True,Mon Oct 23 06:04:59 +0000 2017,@SpotifyCares PC with Windows 7 with version 1.0.65.320 and a Samsung galaxy S7 with version 8.4.24.874 (both devices are up to date),"1179891,1179893",1179894.0
+1179894,SpotifyCares,False,Fri Oct 20 22:29:55 +0000 2017,"@397484 Hey Andrew! Can you let us know the device, operating system, and Spotify version you're running? We'll see what we can suggest /LO",1179892,1179895.0
+1179895,397484,True,Fri Oct 20 19:17:08 +0000 2017,@115888 more than half of my music will not play no matter what I do on any of my devices. I also have premium.. :/,1179894,
+1179896,SpotifyCares,False,Tue Oct 24 21:50:11 +0000 2017,@145891 2: it to be added in the future at https://t.co/2l94QYiAaU. Let us know if we can help with anything else /AM,,1179897.0
+1179897,145891,True,Tue Oct 24 21:16:42 +0000 2017,@SpotifyCares I won't be able to to get a uni days account as my course provider is not listed. Is there any other way to retain my discount?,"1179896,1179898",1179899.0
+1179899,SpotifyCares,False,Tue Oct 24 20:58:40 +0000 2017,"@145891 Hey Amy, thanks for reaching out. We’d recommend using UNiDAYS through https://t.co/ZCWeItTUhj, as NUS isn’t available right now /TR",1179897,1179900.0
+1179900,145891,True,Tue Oct 24 20:23:39 +0000 2017,@SpotifyCares I have a student discount on my account and I have a nus card how do I keep my membership?,1179899,
+1179898,SpotifyCares,False,Tue Oct 24 21:50:00 +0000 2017,"@145891 1: We’re afraid that if your university/college isn’t listed, you won’t be eligible at this time. But, you can request...",,1179897.0
+1442058,SpotifyCares,False,Thu Nov 02 12:42:56 +0000 2017,@454586 Hey Aaron! Let us know if there's anything we can help you with; we'll see what we can suggest 🙂 /L,,1442059.0
+1442059,454586,True,Thu Nov 02 11:08:01 +0000 2017,@5634 @125633  https://t.co/4tECF3NOLi,1442058,1442060.0
+1442060,454586,True,Thu Nov 02 10:43:31 +0000 2017,I feel I spend too much time/money making music just for @5634 @125633 to mess up artist mapping on release day. C'mon guys...,1442059,
+1442061,SpotifyCares,False,Thu Nov 02 12:37:45 +0000 2017,@454587 Got it! Can you DM us your account's username or email address? We'll take a look under the hood /PL https://t.co/ldFdZRiNAt,,1442062.0
+1442062,454587,True,Thu Nov 02 12:34:18 +0000 2017,"@SpotifyCares its happening over 4G and WiFi, noticeably worse on wifi..it also affects my laptop and tablet versions of spoitfy :(",1442061,1442063.0
+1442063,SpotifyCares,False,Thu Nov 02 12:31:51 +0000 2017,"@454587 Hmm. Is this happening over 3G/4G, WiFi, or both? Can you check if this is also happening on a different device? /PL",1442062,1442064.0
+1442064,454587,True,Thu Nov 02 12:22:17 +0000 2017,"@SpotifyCares No error message, just constant crashing and freezing, music keeps playing and stopping randomly, shuffle doesn't work and superslow loading",1442063,1442065.0
+1442065,SpotifyCares,False,Thu Nov 02 12:11:56 +0000 2017,"@454587 Don't worry, we'll get to the bottom of this. Are you getting any error messages? If so, sending us a screenshot of it would be great /PL",1442064,1442066.0
+1442066,454587,True,Thu Nov 02 10:54:23 +0000 2017,@SpotifyCares I've been having issues for the past six months and I keep hitting brick walls with help :(,1442065,1442067.0
+1442067,SpotifyCares,False,Thu Nov 02 10:27:37 +0000 2017,"@454587 Hey! Sorry to hear that. Can you let us know the device, OS, and Spotify version you're using? We'll see what we can suggest /RS","1442066,1442068",1442069.0
+1442069,454587,True,Thu Nov 02 09:47:27 +0000 2017,@115888 yo my Spotify has crashed 3 time in 10mins and now I have to re download all my fkin songs! Why the hell do I give you £10a month!!,1442067,
+1573299,SpotifyCares,False,Tue Oct 17 06:29:31 +0000 2017,@484947 Hey there! What's happening exactly when you're trying to play Bruno Mars tracks? We'll help out /AR,,1573300.0
+1573300,484947,True,Tue Oct 17 06:25:23 +0000 2017,Hé @115888 I need my @131175 vitamins.. what's up?,1573299,
+1573304,SpotifyCares,False,Tue Oct 17 06:28:58 +0000 2017,"@484949 Hey Jason, we can see how that’d be handy! Thanks for taking the time to reach out – your feedback's been noted 📝 /AY",,1573305.0
+1573305,484949,True,Tue Oct 17 06:24:02 +0000 2017,Hey. @115888 I love my “Running Playlist” but I need a button to hit on the treadmill that lets me add those sweet new toons to a playlist for next run! Please?,1573304,
+1573306,SpotifyCares,False,Tue Oct 17 06:18:47 +0000 2017,@484950 You're welcome. Tell us if you still encounter the same issue. We'll be right here waiting for any updates /GK,,1573307.0
+1573307,484950,True,Tue Oct 17 06:16:00 +0000 2017,@SpotifyCares Okay. Thank you for your help.,1573306,1573308.0
+1573308,SpotifyCares,False,Tue Oct 17 06:15:00 +0000 2017,@484950 Thanks for sending that screenshot over. Could you try doing a soft reset on your device? Let us know how it goes /GK,1573307,1573309.0
+1573309,484950,True,Tue Oct 17 06:02:57 +0000 2017,"@SpotifyCares I’m on an iPhone 7 and I have the Spotify version 8.4.22 , I’ve tried updating it but it hasn’t worked at all. https://t.co/j0Jj37yWHP",1573308,1573310.0
+1573310,SpotifyCares,False,Tue Oct 17 06:00:40 +0000 2017,"@484950 Hey there! Can you let us know the device, operating system, and Spotify version you're using? We'll see what we can suggest /GK",1573309,1573311.0
+1573311,484950,True,Tue Oct 17 05:47:04 +0000 2017,@115888 What’s wrong with your app?? ☹️☹️ https://t.co/XLrgQx8MiN,1573310,
+1704250,SpotifyCares,False,Mon Nov 06 22:12:05 +0000 2017,"@516597 Hi, help's here! Can you send us a screenshot of what you're seeing on your end? We'll see what we can suggest /DV",1704251,1704252.0
+1704251,516597,True,Mon Nov 06 22:16:51 +0000 2017,@SpotifyCares  https://t.co/cOqlIbMS3y,1704253,1704250.0
+1704253,516597,True,Mon Nov 06 22:17:06 +0000 2017,@SpotifyCares  https://t.co/hcmBd1Eolx,1704254,1704251.0
+1704254,516597,True,Mon Nov 06 22:17:16 +0000 2017,@SpotifyCares  https://t.co/A3pUA4Vbzi,1704255,1704253.0
+1704255,516597,True,Mon Nov 06 22:18:52 +0000 2017,@SpotifyCares No album content though.,1704256,1704254.0
+1704256,SpotifyCares,False,Mon Nov 06 22:29:21 +0000 2017,"@516597 It doesn't look like the album's available in your country. We hope to have it soon, but there's more info at https://t.co/0i8GpimuDa /DV",,1704255.0
+1704252,516597,True,Mon Nov 06 20:23:11 +0000 2017,"Why is this great album without tracks? @SpotifyCares  
+Retriever van Ron Sexsmith
+https://t.co/u6b07RZLMU",1704250,
+1704258,SpotifyCares,False,Mon Nov 06 22:09:40 +0000 2017,@516598 Hi there! We've just replied to your DM. Let's continue chatting there /GT,,1704259.0
+1704259,516598,True,Mon Nov 06 20:18:24 +0000 2017,"@SpotifyCares in need of an artist name change just need to take out two letters if there’s a way email me 
+
+__email__",1704258,
+1704260,SpotifyCares,False,Mon Nov 06 22:03:43 +0000 2017,"@516599 Hey, help's here! What's happening exactly? What device/OS and Spotify version are you using? We'll see what we can suggest /AR",1704261,1704262.0
+1704261,516599,True,Mon Nov 06 22:09:05 +0000 2017,"@SpotifyCares Hi! As soon as I run the program the laptop freeze, I always have to restart it. I'm using W10. Version 1.0.64.399.g4637b02a",1704263,1704260.0
+1704263,516599,True,Mon Nov 06 22:11:31 +0000 2017,"@SpotifyCares I have already reinstalled multiple times, but it always happens. Not really sure what's happening with it.",1704264,1704261.0
+1704264,SpotifyCares,False,Mon Nov 06 22:17:12 +0000 2017,"@516599 Thanks for the info. Just to check, did you happen to follow the steps at https://t.co/EqisDMwZAT when you reinstalled the app? /AR",1704265,1704263.0
+1704265,516599,True,Mon Nov 06 22:27:39 +0000 2017,@SpotifyCares I used to do it with CCleaner. Seems to be running ok now. Thanks for the help!,1704266,1704264.0
+1704266,SpotifyCares,False,Mon Nov 06 22:33:41 +0000 2017,"@516599 No worries! We're glad it's working fine now. If you ever need us again, just give us a... https://t.co/AUc7DGJpgF 🙂 /AR",,1704265.0
+1704262,516599,True,Mon Nov 06 20:12:52 +0000 2017,help @SpotifyCares,1704260,1704267.0
+1704267,516599,True,Mon Nov 06 19:37:26 +0000 2017,"Sempre que tento usar o Spotify no PC dá freeze, não entendo.",1704262,
+1704268,SpotifyCares,False,Mon Nov 06 21:59:54 +0000 2017,@516600 Sweet! Happy to hear that things are... https://t.co/HlBaWovbcq. Just give us a shout if you need anything else 🙂 /MS,,1704269.0
+1704269,516600,True,Mon Nov 06 20:41:57 +0000 2017,@SpotifyCares I'm using Windows 10 tho the issue has been already fixed .p,1704268,1704270.0
+1704270,SpotifyCares,False,Mon Nov 06 20:41:18 +0000 2017,"@516600 Hey Ferry! Don’t worry, we'll look into this. What’s happening exactly? Can you let us know the operating system you’re using? /MS",1704269,1704271.0
+1704271,516600,True,Mon Nov 06 18:09:38 +0000 2017,@115888 @SpotifyCares need support,1704270,1704272.0
+1704272,516600,True,Mon Nov 06 18:09:04 +0000 2017,A alguien más le ocurre esto si intentáis entrar a la página de @115888 ? https://t.co/Jdecw6hZI2,1704271,
+1704350,SpotifyCares,False,Sun Nov 05 10:43:37 +0000 2017,@516624 Hey! We have more info about this here: https://t.co/pXBCq8GlsI. Give us a shout if you have any questions /RE,,1704351.0
+1704351,516624,True,Sun Nov 05 09:19:39 +0000 2017,@SpotifyCares Why there is no more pre-hearing option on songs. Thing you could press the dots and hear a clip of that song?,1704350,
+1835027,SpotifyCares,False,Wed Oct 18 14:58:15 +0000 2017,"@550355 We're very sorry, but we can only reply in English. We'd suggest reaching out to our Email team at  https://t.co/ZgU70TbP8M /SJ",,1835028.0
+1835028,550355,True,Wed Oct 18 14:47:36 +0000 2017,@SpotifyCares hereๆๆๆๆ https://t.co/uGibEIJi2L,1835027,1835029.0
+1835029,SpotifyCares,False,Wed Oct 18 14:44:02 +0000 2017,"@550355 Hey! We can help out in English via Twitter, but we also have Thai support via email at https://t.co/ZgU70TbP8M /SJ","1835028,1835030,1835031",1835032.0
+1835032,550355,True,Wed Oct 18 14:18:13 +0000 2017,@550356 @121907 @115888 @SpotifyCares,"1835033,1835029",1835034.0
+1835034,550356,True,Wed Oct 18 14:16:56 +0000 2017,@550355 ask @/SpotifyCares,1835032,1835035.0
+1835035,550355,True,Wed Oct 18 14:13:12 +0000 2017,ขึ้นงี้ทำไงอะค้าบ แง https://t.co/xiqpjYOyrQ,1835034,
+1835044,SpotifyCares,False,Wed Oct 18 14:50:32 +0000 2017,"@550359 Hey, help's here. Could you DM us your account's email address or username? We'll take a look backstage /AY https://t.co/ldFdZRiNAt",1835045,1835046.0
+1835045,550359,True,Wed Oct 18 14:51:56 +0000 2017,@SpotifyCares i dont have an account yet im trying to register a new account,1835047,1835044.0
+1835047,SpotifyCares,False,Wed Oct 18 14:57:46 +0000 2017,"@550359 Alright. What country are you currently located in? If you could also DM us the email address you'd like to use, that'd be great /AY https://t.co/ldFdZRiNAt",,1835045.0
+1835046,550359,True,Wed Oct 18 14:48:19 +0000 2017,"@SpotifyCares Every time i try to register it tells me i need to refresh, the form has expired, tried 4 times now is there a problem atm?",1835044,
+1835060,SpotifyCares,False,Wed Oct 18 14:46:50 +0000 2017,@550364 Hi Jae! Could you check if your device meets the system requirements at https://t.co/eQeNrNnvlX? We'll keep an eye out for your reply /LP,1835061,1835062.0
+1835061,550364,True,Wed Oct 18 15:19:38 +0000 2017,"@SpotifyCares yes, I am running Android OS 6.0 and have much more than the minimum space requirements.",1835063,1835060.0
+1835063,SpotifyCares,False,Wed Oct 18 15:33:46 +0000 2017,"@550364 Sweet. The app should work just fine. If you haven't installed it, you can follow the steps here: https://t.co/BgQTqwrLHj 🙂 /LP",1835064,1835061.0
+1835064,550364,True,Wed Oct 18 17:05:32 +0000 2017,"@SpotifyCares okay great, I was wondering b/c I heard that on 10 inch tablets that the app wont force you to shuffle..However, my screen is 9.6 inches",1835065,1835063.0
+1835065,SpotifyCares,False,Wed Oct 18 17:13:51 +0000 2017,"@550364 If you're on Free, you should get on-demand access (supported by ads) on your tablet. There's more info here: https://t.co/MInQRSMgzZ /LP",,1835064.0
+1835062,550364,True,Wed Oct 18 14:30:09 +0000 2017,@SpotifyCares will tablet mode work on a samsung galaxy tab E ? The screen dimensions are 9.6 inches.,1835060,
+1835091,SpotifyCares,False,Wed Oct 18 14:47:19 +0000 2017,@550370 Hey there! We've come to the rescue. Could you DM us your account's email address/username? We'll check behind the scenes /RE https://t.co/ldFdZRiNAt,,1835092.0
+1835092,550370,True,Wed Oct 18 14:39:19 +0000 2017,"Hi @SpotifyCares, I want to add new relative on Spotify Family but when registering, it keeps getting error code 3. Any solution?",1835091,
+1835103,SpotifyCares,False,Wed Oct 18 14:47:46 +0000 2017,@550373 The ranking's based not only on the number of listeners but also on the total streamed tracks. Keep listening &amp; support your fave artist /CO,,1835104.0
+1835104,550373,True,Wed Oct 18 14:27:30 +0000 2017,@SpotifyCares https://t.co/OP9Rgm2Yxe,1835103,
+1835111,SpotifyCares,False,Wed Oct 18 14:49:51 +0000 2017,@550374 Thanks. Everything's good on our end. Can you DM us your account's username or email address? We'll check backstage /NG https://t.co/ldFdZRiNAt,,1835112.0
+1835112,550374,True,Wed Oct 18 14:39:49 +0000 2017,@SpotifyCares https://t.co/8yCTisYAUj,1835111,1835113.0
+1835113,SpotifyCares,False,Wed Oct 18 14:37:15 +0000 2017,@550374 Can you send us the Song Links? Just tap the three dots &gt; Share &gt; Copy Link. We'll check things out /NG,"1835112,1835114,1835115",1835116.0
+1835116,550374,True,Wed Oct 18 14:33:40 +0000 2017,"@SpotifyCares Nope, no messages or indicators. Another artist made the list too. So far, it's Bon Iver, The National, and Grizzly Bear",1835113,1835117.0
+1835117,SpotifyCares,False,Wed Oct 18 14:32:21 +0000 2017,"@550374 Hey Alex! Just to check, are you getting any specific error messages? If so, a screenshot can be handy /NG",1835116,1835118.0
+1835118,550374,True,Wed Oct 18 13:52:08 +0000 2017,@SpotifyCares Tracks from both artists listed but not present and skipped when played through any artist radio.,1835117,1835119.0
+1835119,550374,True,Wed Oct 18 13:48:00 +0000 2017,"@SpotifyCares Odd bug - can't play/queue two specific artists. Tracks available. iPhone 6 iOS 10.3.3 + Mac app. On click, all music stops",1835118,
+1835138,SpotifyCares,False,Wed Oct 18 14:59:03 +0000 2017,"@550379 Hi, Discover Weekly is based on what you, and others like you, are listening to. Hopefully it’s more in tune with your tastes next week! /PB",,1835139.0
+1835139,550379,True,Wed Oct 18 14:37:41 +0000 2017,Srsly @115888? 😒 https://t.co/55uA9rLoCI,1835138,
+1835288,SpotifyCares,False,Wed Oct 18 15:02:57 +0000 2017,"@550405 Hey, sometimes content gets temporarily removed because of licensing changes. Hopefully we'll have it available again soon! /PB",,1835289.0
+1835289,550405,True,Wed Oct 18 14:41:09 +0000 2017,@115888 bring back xxxtentacion’s looking for a star on spotify bitch,1835288,
+1835317,SpotifyCares,False,Wed Oct 18 15:12:11 +0000 2017,"@550410 Hey Jake, help's here! Could you DM us the email address you used to reach out? We'll take a look into things /SP /SP https://t.co/ldFdZRiNAt",,1835318.0
+1835318,550410,True,Wed Oct 18 14:59:38 +0000 2017,@SpotifyCares @125633 Hi I reached out through email weeks ago requesting an artist separation. Still haven't heard back. Pls help,1835317,
+1835358,SpotifyCares,False,Wed Oct 18 15:05:32 +0000 2017,@550422 Sorry to hear that! Check out the steps under “Downloads unexpectedly removed” at https://t.co/38J7tFlIBF. They should help with this /DH,,1835359.0
+1835359,550422,True,Wed Oct 18 14:57:27 +0000 2017,@115888 why is my app deleting some of my downloaded songs? I don’t pay premium for this.,1835358,
+1835386,SpotifyCares,False,Wed Oct 18 15:06:58 +0000 2017,"@550426 Hey Jacob, we'd love to help! Can you DM us both your accounts' usernames or email addresses? We'll see what we can do /JP https://t.co/ldFdZRiNAt",,1835387.0
+1835387,550426,True,Wed Oct 18 15:00:39 +0000 2017,"@SpotifyCares I’ve already created a new free account, want to be sure I don’t get charged twice for the month. Trying to get rid of Facebook link.",1835386,1835388.0
+1835388,550426,True,Wed Oct 18 15:00:12 +0000 2017,@SpotifyCares I have a Facebook linked account with Student Billing. Can you assist in switching this to a new account? (1/2),1835387,
+1835511,SpotifyCares,False,Wed Oct 18 15:34:44 +0000 2017,@550454 Hi! Sorry to hear that Check out the steps under “Downloads unexpectedly removed” at https://t.co/38J7tFlIBF. They should help with this /AU,,1835512.0
+1835512,550454,True,Wed Oct 18 15:14:19 +0000 2017,@SpotifyCares Every month. I get terrible reception where I work. I need the downloaded versions. This is getting out of hand.,1835511,1835513.0
+1835513,550454,True,Wed Oct 18 15:11:50 +0000 2017,@SpotifyCares not sure why I'm paying for a subscription so that I can save music to my phone if y'all are gonna make me redownload it,1835512,
+1835529,SpotifyCares,False,Wed Oct 18 15:31:59 +0000 2017,"@550460 Thanks! Are you getting any error messages when you try to play their tracks? If so, can you send us a screenshot for us to check? /SY","1835530,1835531,1835532,1835533",1835534.0
+1835530,550460,True,Wed Oct 18 15:36:56 +0000 2017,@SpotifyCares I even uninstalled and reinstalled Spotify.,1835535,1835529.0
+1835535,SpotifyCares,False,Wed Oct 18 17:35:14 +0000 2017,@550460 Thanks for trying them out. Does giving your phone a quick restart make any difference? /SY,1835536,1835530.0
+1835536,550460,True,Wed Oct 18 17:38:48 +0000 2017,@SpotifyCares I even tried that.,1835537,1835535.0
+1835537,SpotifyCares,False,Wed Oct 18 17:41:24 +0000 2017,"@550460 Are you getting this issue only on 3G/4G, WiFi, or both? /SY","1835538,1835539",1835536.0
+1835538,550460,True,Wed Oct 18 17:43:06 +0000 2017,"@SpotifyCares I can't tell whether it's a ZTE, Google, MetroPCS, or Spotify issue.",,1835537.0
+1835539,550460,True,Wed Oct 18 17:41:47 +0000 2017,@SpotifyCares Both,1835540,1835537.0
+1835540,SpotifyCares,False,Wed Oct 18 17:44:02 +0000 2017,@550460 Could you DM us your account's username and email address? We'll take a look backstage /SY https://t.co/ldFdZRiNAt,,1835539.0
+1835531,550460,True,Wed Oct 18 15:35:45 +0000 2017,@SpotifyCares It runs Android 7.1.1,,1835529.0
+1835532,550460,True,Wed Oct 18 15:35:15 +0000 2017,"@SpotifyCares I talked to @261409 about it and I wiped my partition cache, but the issues persist.",,1835529.0
+1835533,550460,True,Wed Oct 18 15:34:07 +0000 2017,"@SpotifyCares No, they just won't play when I touch them. They play fine on my desktop app. Just the phone has issues.",,1835529.0
+1835534,550460,True,Wed Oct 18 14:35:18 +0000 2017,@SpotifyCares https://t.co/pPseUUQ00P for instance and I'm in the USA.,1835529,1835541.0
+1835541,SpotifyCares,False,Wed Oct 18 14:33:24 +0000 2017,"@550460 Hey George, can you send us the Song Link? Just tap the three dots &gt; Share &gt; Copy Link. Also, what country is your account set to? /SY",1835534,1835542.0
+1835542,550460,True,Wed Oct 18 13:51:54 +0000 2017,@SpotifyCares Songs by Prince and Robin Thicke won't play on my @261409 Blade Z Max.,1835541,
+1179893,SpotifyCares,False,Mon Oct 23 07:01:05 +0000 2017,"@397484 Thanks! Can you let us know if logging out and back in to the app makes any difference? Also, does restarting your device help? /CH",,1179892.0
+1835030,550355,True,Wed Oct 18 14:46:56 +0000 2017,@SpotifyCares youๆๆๆๆๆ read dm ka,,1835029.0
+1835031,550355,True,Wed Oct 18 14:46:13 +0000 2017,@SpotifyCares พิมรัยมายาวปัยไม่อ่านว่อย,,1835029.0
+1835114,550374,True,Wed Oct 18 14:39:10 +0000 2017,@SpotifyCares https://t.co/mK6b5hraSC,,1835113.0
+1835115,550374,True,Wed Oct 18 14:38:27 +0000 2017,"@SpotifyCares Also applied to downloaded songs. Here are a few examples, but it's each artist's entire catalog. https://t.co/zKOtrQLDCR",,1835113.0
+1966261,SpotifyCares,False,Tue Oct 31 11:22:00 +0000 2017,@582754 Hey Sean! Could you DM us the email address connected to your Spotify account? We'll see what we can suggest /L https://t.co/ldFdZRiNAt,,1966262.0
+1966262,582754,True,Mon Oct 30 22:32:26 +0000 2017,@125633 I've just signed up and after a couple of hours I started getting 401 unauthorised errors. Can't log in now. :-/,1966261,
+1966371,SpotifyCares,False,Wed Oct 18 17:21:54 +0000 2017,@582772 Thanks! We've just sent a DM back your way. Let's carry on chatting there /TR,,1966372.0
+1966372,582772,True,Wed Oct 18 16:56:26 +0000 2017,@SpotifyCares Sent.,1966371,1966373.0
+1966373,SpotifyCares,False,Wed Oct 18 16:47:55 +0000 2017,"@582772 Hey Trevor! Don’t worry, we can help. What’s happening exactly? Can you DM us your account's username and email address? /TR https://t.co/ldFdZRiNAt",1966372,1966374.0
+1966374,582772,True,Wed Oct 18 16:16:35 +0000 2017,"@SpotifyCares k, I’ve been loyal for years but I’m thinking of switching to Apple Music if my account isn’t fixed.",1966373,
+1966375,SpotifyCares,False,Wed Oct 18 17:20:19 +0000 2017,@582773 Hi Drew! We've sent a reply to your DM. Let's carry on chatting there 🙂 /LP,,1966376.0
+1966376,582773,True,Wed Oct 18 16:38:23 +0000 2017,@SpotifyCares I bought Premium like 30 mins ago and but don't have premium features on phone or PC. Logging in w/ facebook,1966375,
+1966377,SpotifyCares,False,Wed Oct 18 17:19:42 +0000 2017,"@582774 You're welcome and thanks for the kind words! By the way, you might've missed our DM. Check out your messages /JP",,1966378.0
+1966378,582774,True,Wed Oct 18 17:11:29 +0000 2017,Thank you so much @SpotifyCares you guys go above and beyond!,1966377,
+1966540,SpotifyCares,False,Tue Oct 31 12:07:20 +0000 2017,@327557 Hi Chloe! Help's here. Can you DM us your account's username or email address? We'll check things backstage /MU https://t.co/ldFdZRiNAt,,1966541.0
+1966541,327557,True,Tue Oct 31 10:02:00 +0000 2017,@SpotifyCares I keep getting emails saying welcome to spotify Premium even though I already have premium? 🤔,1966540,
+1966643,SpotifyCares,False,Tue Oct 31 12:18:28 +0000 2017,@582822 Hey Thomas! Your Discover Weekly should improve as it gets to know you. Keep adding your favorite tracks to Your Library/playlists 🙂 /AY,,1966644.0
+1966644,582822,True,Tue Oct 31 10:26:05 +0000 2017,Hey @115888 what have I ever done to you that makes you put Nickleback in my discover weekly playlist?!,1966643,
+1966670,SpotifyCares,False,Tue Oct 31 12:22:11 +0000 2017,@582827 Hey! What operating system &amp; Spotify version are you on? It'd be great if you could send us a screenshot of what you can see on your end /AY,1966671,1966672.0
+1966671,582827,True,Wed Nov 01 05:57:58 +0000 2017,"@SpotifyCares Hello guys, thanks for the response. I cleared everything, and reinstalled. Looks good now. I'm on Windows 10 with ver 1.0.65.320 (truncated)",1966673,1966670.0
+1966673,SpotifyCares,False,Wed Nov 01 05:59:38 +0000 2017,"@582827 You're welcome! We're happy to hear everything's sorted out. If you need anything else, just give us a shout. https://t.co/m4HWSbgHVZ 🙂 /KC",,1966671.0
+1966672,582827,True,Tue Oct 31 10:37:54 +0000 2017,"Seems like the latest Spotify desktop update is missing a repeat button! Bit weird. Anyone experiencing this as well?
+
+cc. @SpotifyCares",1966670,
+1442068,454587,True,Thu Nov 02 10:53:27 +0000 2017,@SpotifyCares It's an xperia xz running android 7.1.1 and my spotify version is 8.4.25.771 armV7,,1442067.0
+262267,SpotifyCares,False,Thu Oct 05 22:13:18 +0000 2017,"@178472 1: Hey Jared, help's here! Can you DM us a screenshot of how the charge appears on your company's billing statement along with...",,262266.0
+2490944,SpotifyCares,False,Wed Nov 15 17:41:20 +0000 2017,@711223 We've just sent a DM your way. Let's carry on chatting there 🙂 /CG,,2490945.0
+2490945,711223,True,Wed Nov 15 17:17:27 +0000 2017,"@SpotifyCares I upgraded my phone, and my saved library won't appear on my new phone. Yes I am logged into the right account",2490944,
+2490946,SpotifyCares,False,Wed Nov 15 17:41:18 +0000 2017,"@711224 Hey Gera, help's here! Could you send us a DM with your account's email address or username, along with that of your wife's? We'll take a look backstage /CO https://t.co/ldFdZRiNAt",,2490947.0
+2490947,711224,True,Wed Nov 15 17:24:36 +0000 2017,Dear @115888 It is beyond stupid that I cannot change or even see the address I registered on my account; My wife can't log to the family package! She obviously lives with me! I'm changing to @1122 you fucking assholes!,2490946,
+2490948,SpotifyCares,False,Wed Nov 15 17:38:35 +0000 2017,"@711225 It should take you to the Upside Down 😉 Make sure it's enabled in your app's Settings tab, and see which Stranger Things character matches your music taste: https://t.co/OjXSqZHtPg /RR",,2490949.0
+2490949,711225,True,Wed Nov 15 16:58:46 +0000 2017,@115888 What is the stranger things - mode supposed to do?,2490948,
+2490950,SpotifyCares,False,Wed Nov 15 17:38:28 +0000 2017,"@711226 Hey Chris! Are you not seeing Jazz under Genres and Moods? If so, can you tell us the country that your account is set to? We'll look into this /SY",2490951,2490952.0
+2490951,711226,True,Wed Nov 15 19:19:47 +0000 2017,"@SpotifyCares Hi Spotify, I'm in the great U S of A. 
+
+Here's the link: https://t.co/keVTwxMyNt
+
+What do you think?",2490953,2490950.0
+2490953,SpotifyCares,False,Wed Nov 15 19:35:20 +0000 2017,@711226 Thanks for letting us know. Can you try out this link: https://t.co/4cdqT70Q37? Let us know if you're able to see the Jazz selections there /QI,2490954,2490951.0
+2490954,711226,True,Wed Nov 15 19:40:50 +0000 2017,"@SpotifyCares That does work. However, still no sexy sax icon in Genres &amp; Moods...",2490955,2490953.0
+2490955,SpotifyCares,False,Wed Nov 15 20:05:30 +0000 2017,@711226 Got it. Can you try using an incognito window and checking if the Jazz genre is there? Keep us posted /QI,,2490954.0
+2490952,711226,True,Wed Nov 15 17:27:36 +0000 2017,"@115888 you didn't think we'd notice you took Jazz off as a genre? No can do, must put it back. Thank you.",2490950,
+2490956,SpotifyCares,False,Wed Nov 15 17:38:17 +0000 2017,@711227 Hey Mick! Our Curation team are independent so there's no formal submission process. Check out https://t.co/6BMOmfiZvQ to help you gain visibility /JP,2490957,2490958.0
+2490957,711227,True,Wed Nov 15 23:07:54 +0000 2017,@SpotifyCares Thanks! I'll do that!,2490959,2490956.0
+2490959,SpotifyCares,False,Wed Nov 15 23:14:43 +0000 2017,@711227 You're welcome! Stay groovy /KL,,2490957.0
+2490958,711227,True,Wed Nov 15 17:27:16 +0000 2017,How do I get on a @115888 playlist?,2490956,
+2752810,SpotifyCares,False,Tue Nov 21 01:25:10 +0000 2017,@770618 Hey there! Can you DM us your account's email address? We'll take a look /RB https://t.co/ldFdZRiNAt,,2752811.0
+2752811,770618,True,Tue Nov 21 01:20:41 +0000 2017,@115888 are you down? Can’t log in..,2752810,
+2752812,SpotifyCares,False,Tue Nov 21 01:24:21 +0000 2017,@770619 Hey Abby! Could you send us a DM with your account's email address or username? We'll take a look backstage /LO https://t.co/ldFdZRiNAt,,2752813.0
+2752813,770619,True,Tue Nov 21 01:19:16 +0000 2017,"@SpotifyCares My Spotify account on the phone app has now turned to a free account, when I have a premium? As well, I am unable to log onto my account on my desktop device? I do not know what has cause me to be logged out and suddenly changed to a free account",2752812,
+2752814,SpotifyCares,False,Tue Nov 21 01:24:19 +0000 2017,@770620 Hey there! The cavalry's here. Can you DM us your account's email address? We'll see what we can suggest /KB https://t.co/ldFdZRiNAt,,2752815.0
+2752815,770620,True,Tue Nov 21 01:17:55 +0000 2017,"@115888 , can you please fix your shuffle? 400+ songs in a playlist and it plays the same 50 songs any time I press shuffle. There's variety in a playlist for a reason lmfao",2752814,
+2752816,SpotifyCares,False,Tue Nov 21 01:19:26 +0000 2017,@770621 Hey there! Can you DM us your account's email address? We'll take a look backstage /RB https://t.co/ldFdZRiNAt,,2752817.0
+2752817,770621,True,Tue Nov 21 01:12:58 +0000 2017,@115888 I just bought 3 months of spotify premium for $0.99 and cleared my cache and it says I have a free account...,2752816,
+2752818,SpotifyCares,False,Tue Nov 21 01:19:25 +0000 2017,@770622 Hey there! This sounds like a great idea. You can show your support for this here: https://t.co/7qXM7TUxUt /CE,,2752819.0
+2752819,770622,True,Tue Nov 21 01:13:14 +0000 2017,@115888 you should add a functionality: sort tracks by bpm. #asap,2752818,
+2752820,SpotifyCares,False,Tue Nov 21 01:12:23 +0000 2017,"@770623 Hey Dave, help's here! Can you let us know what devices, operating systems, and Spotify versions you're using? We'll see what we can suggest /CH",2752821,2752822.0
+2752821,770623,True,Tue Nov 21 01:24:59 +0000 2017,"@SpotifyCares My phone is a Huawei Y538 running Android 5.1.1, and Spotify version 8.4.28.875 armV7.  Won't have the tablet info until I get home.","2752823,2752824,2752825",2752820.0
+2752823,SpotifyCares,False,Tue Nov 21 02:09:58 +0000 2017,@770623 Thanks for the info! Can you tell us if you have any pending Android updates? /CH,2752826,2752821.0
+2752826,770623,True,Tue Nov 21 03:59:49 +0000 2017,@SpotifyCares No pending updates.,2752827,2752823.0
+2752827,SpotifyCares,False,Tue Nov 21 04:33:19 +0000 2017,@770623 Hmm. could you let us know how much available memory there is on your device (internal and on an SD card if applicable)? /CH,"2752828,2752829",2752826.0
+2752828,770623,True,Tue Nov 21 04:42:22 +0000 2017,@SpotifyCares Phone has 3.82 GB with 721MB free.,2752830,2752827.0
+2752830,SpotifyCares,False,Tue Nov 21 04:47:10 +0000 2017,@770623 Alright! Could you send us a DM with your account's email address? We'll take a look backstage /CH https://t.co/ldFdZRiNAt,,2752828.0
+2752829,770623,True,Tue Nov 21 04:37:59 +0000 2017,@SpotifyCares Here's the info on my tablet: Acer B3-A30 running Android 6.0 with 53  GB of internal space using 8.33 GB.  Will get phone info in a moment.,,2752827.0
+2752824,SpotifyCares,False,Wed Nov 22 01:37:19 +0000 2017,@770623 That's odd. Let's check for something else. Do you have an SD card loaded on your phone? /JU,2752831,2752821.0
+2752831,770623,True,Wed Nov 22 01:39:28 +0000 2017,@SpotifyCares No SD card.,,2752824.0
+2752825,SpotifyCares,False,Wed Nov 22 03:24:39 +0000 2017,@770623 Can you send us a DM with the screenshot of the Spotify app's memory usage as it appears on your device? We'll be waiting on the other side and let's continue chatting there /CH https://t.co/ldFdZRiNAt,,2752821.0
+2752822,770623,True,Tue Nov 21 01:10:07 +0000 2017,"@SpotifyCares Whenever I use your app, the amount of memory it takes up grows exponentially.  It starts at about 195 MB, after a half hour it's up to about 400 MB.  It does this on both my phone and tablet.","2752820,2752832",
+2752833,SpotifyCares,False,Tue Nov 21 01:10:49 +0000 2017,@770624 Hey there! Can you DM us your account's email address? We'll take a look /RB https://t.co/ldFdZRiNAt,,2752834.0
+2752834,770624,True,Tue Nov 21 01:08:15 +0000 2017,"@SpotifyCares I have been logged out of my account when I tried to reset my password, it said “CSRF token is invalid”. Help. https://t.co/etKjM55L5C",2752833,
+2752835,SpotifyCares,False,Tue Nov 21 01:10:30 +0000 2017,"@770625 Hey there! Can you DM us your account's email address or username, as well as that of the account you've wrongly subscribed to Premium? We'll take a look backstage /AR https://t.co/ldFdZRiNAt",,2752836.0
+2752836,770625,True,Tue Nov 21 01:07:20 +0000 2017,@SpotifyCares I was logged into the wrong account on google when I bough premium. Is there anyway I can get my money back for that acc or switch the premium to another account ??,2752835,
+2752837,SpotifyCares,False,Tue Nov 21 01:03:51 +0000 2017,"@770626 Hey there! Taylor Swift's 'Reputation' isn't available to stream just yet! For now, check out the singles: https://t.co/3h0TnPFdBC /AR",,2752838.0
+2752838,770626,True,Tue Nov 21 00:57:22 +0000 2017,"I don’t have iTunes,I can’t wait no more to listen to Reputation and I refuse to listen to it illegally,so, @115888 you know what to do....",2752837,
+2752839,SpotifyCares,False,Tue Nov 21 01:03:49 +0000 2017,"@770627 Hey there! Can you tell us what device, operating system, and Spotify version you're using? We'll check things out /CH",2752840,2752841.0
+2752840,770627,True,Tue Nov 21 01:09:25 +0000 2017,"@SpotifyCares Holy shit didn't expect a response. 
+Running Windows 10 with Spotify Ver 1.0.67.582.g19436fa3",2752842,2752839.0
+2752842,SpotifyCares,False,Tue Nov 21 01:41:51 +0000 2017,@770627 Thanks for the info! Can you send us a screenshot showing how your app completely looks like with the bar showing at the bottom part of the screen? We'll take a closer look /CH,2752843,2752840.0
+2752843,770627,True,Tue Nov 21 01:43:17 +0000 2017,@SpotifyCares Here ya go https://t.co/fMI55xeEf1,2752844,2752842.0
+2752844,SpotifyCares,False,Tue Nov 21 02:01:41 +0000 2017,"@770627 Got it! Could you reinstall the app by following the steps here: https://t.co/grEcQYYFVS? Then, resync your tunes. Let us know how everything plays out /CH",,2752843.0
+2752841,770627,True,Tue Nov 21 00:57:03 +0000 2017,How did that get past the development stage? @115888 https://t.co/sSAiPVZLK9,2752839,
+2752845,SpotifyCares,False,Tue Nov 21 01:03:16 +0000 2017,@770628 Hey there! The cavalry's here. Could you DM us your account's email address? We'll take a look under the hood /KB https://t.co/ldFdZRiNAt,,2752846.0
+2752846,770628,True,Tue Nov 21 00:58:07 +0000 2017,"Hey @115888 been trying to update payment info for 2 days and nothing happens but a locked up spinning progress bar. I can't wait to lose all my songs through no fault of mine. I've tried website,apps...everything.",2752845,
+2752847,SpotifyCares,False,Tue Nov 21 01:01:02 +0000 2017,"@770629 Hey there! Don't worry, we're here to help. Can you let us know more on the playlists you're referring to? We'll see what we can suggest /MT",,2752848.0
+2752848,770629,True,Tue Nov 21 00:58:12 +0000 2017,@SpotifyCares I've been listening to spotify for like 8 days and none of the songs so far are by women. Who makes these playlists?!,2752847,
+2752850,SpotifyCares,False,Tue Nov 21 00:58:47 +0000 2017,"@770631 Hi there. We’d love to have all of JoJo's music available, but we have some info about content here: https://t.co/0i8GpimuDa /JU",,2752851.0
+2752851,770631,True,Tue Nov 21 00:52:19 +0000 2017,@115888 why do you guys not have Leave by JoJo,2752850,
+2883727,SpotifyCares,False,Tue Nov 28 10:48:39 +0000 2017,"@799989 Hi! We've sent a DM your way. If you could check your inbox, that'd be great /AY",,2883728.0
+2883728,799989,True,Tue Nov 28 08:13:56 +0000 2017,"@SpotifyCares 
+I want to know if you guys charge for the month past or coming month ??? Please answer me!!",2883727,
+2883729,SpotifyCares,False,Tue Nov 28 10:38:22 +0000 2017,"@799990 Hey Alfredo, help's here. Can you send us your account's email address or username via DM? We'll take a look /AY https://t.co/ldFdZRiNAt",,2883730.0
+2883730,799990,True,Tue Nov 28 08:35:19 +0000 2017,"@115888  so shitty that I can’t get into my account, the reset link won’t send to my email. 😒",2883729,
+2883731,SpotifyCares,False,Tue Nov 28 10:33:01 +0000 2017,"@799991 Hey Rahadian! We have Indonesian support via email at https://t.co/ZgU70TbP8M, but if you'd like, we can help out in English via Twitter. Just send us a DM with your account's email address or username so we can check things out /AY https://t.co/ldFdZRiNAt",,2883732.0
+2883732,799991,True,Tue Nov 28 08:24:06 +0000 2017,"@118266 Hallo admin, Saya sudah bayar akun milik saya untuk menjadi premium pada hari Sabtu tanggal 25 November 2017, akan tetapi akun saya tidak kunjung premium sampai saat ini.  Saya udah coba email, tapi sejak hari sabtu di bilang masih dalam tahap proses. Gimana lagi yaa?",2883731,
+2883733,SpotifyCares,False,Tue Nov 28 10:29:53 +0000 2017,@799992 Hi! We've sent a DM your way. We'll carry on helping out there /AY,,2883734.0
+2883734,799992,True,Tue Nov 28 08:28:31 +0000 2017,".@SpotifyCares I keep getting this message when attempting to register to Premium via Android 5, mobile carrier @799993 location is Philippines https://t.co/GtiecX00eE","2883735,2883733",
+2917797,SpotifyCares,False,Wed Nov 29 00:24:06 +0000 2017,@807613 Hey Shaun! Everything should be running smoothly now. Let us know if this is still happening /GS,,2917798.0
+2917798,807613,True,Tue Nov 28 21:09:07 +0000 2017,@115888 what’s going on I can’t do anything but listen to my playlists https://t.co/0tbG8g3tKI,2917797,
+2917799,SpotifyCares,False,Wed Nov 29 00:23:52 +0000 2017,@807614 Hey Erick! Everything should be running smoothly now. Let us know if you're still getting issues /GS,,2917800.0
+2917800,807614,True,Tue Nov 28 21:08:54 +0000 2017,What happens? @115888 is not working! 🤨,2917799,
+2917801,SpotifyCares,False,Wed Nov 29 00:23:51 +0000 2017,"@807615 Hey there, that's not cool. Can you sign out everywhere to see if that helps? You can find more info about that here: https://t.co/1DzHuWXFx0. Let us know how it goes /DT",,2917802.0
+2917802,807615,True,Tue Nov 28 20:05:59 +0000 2017,@115888 my playlist keeps auto liking trash songs,2917801,
+2917803,SpotifyCares,False,Wed Nov 29 00:23:13 +0000 2017,"@807616 Hi Mel, thanks for bearing with us. Spotify should be working perfectly again! /FR",,2917804.0
+2917804,807616,True,Tue Nov 28 21:08:33 +0000 2017,@115888 why does Spotify web player always freeze?? lmk?? jw??,2917803,
+2917805,SpotifyCares,False,Wed Nov 29 00:23:03 +0000 2017,@807617 Hey Tim! Everything should be running smoothly now. Let us know if you're still getting issues /GS,,2917806.0
+2917806,807617,True,Tue Nov 28 21:08:42 +0000 2017,@115888 fix your app cunts,2917805,
+2917807,SpotifyCares,False,Wed Nov 29 00:23:00 +0000 2017,@807618 Hi there! We've just sent a DM your way. Let's carry on chatting there /JS,,2917808.0
+2917808,807618,True,Tue Nov 28 21:19:25 +0000 2017,WHY IS SPOTIFY NOT LETTING ME SEARCH FOR MUSIC ?!?!?! @115888 @191335 @SpotifyCares,2917807,
+2917811,SpotifyCares,False,Wed Nov 29 00:20:29 +0000 2017,"@807620 Hey! Sorry to hear that. We had a little hiccup earlier, but everything should be running just fine now /JS",,2917812.0
+2917812,807620,True,Tue Nov 28 21:07:39 +0000 2017,Wtf Spotify?? Should’ve got Apple Music!!,2917811,

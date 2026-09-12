@@ -1,0 +1,263 @@
+{
+  "total_pathways": 1545,
+  "active_pathways": 297,
+  "probation_pathways": 323,
+  "sparse_pathways": 925,
+  "audit_results": {
+    "total_pathways": 1545,
+    "schema_validity_rate": 1.0,
+    "vocabulary_validity_rate": 1.0,
+    "evidence_grounding_rate": 1.0,
+    "outlier_count": 780,
+    "outlier_pathway_ids": [
+      "PW_GENE_0052",
+      "PW_GENE_0054",
+      "PW_GENE_0056",
+      "PW_ACCO_0069",
+      "PW_SUBS_0092",
+      "PW_APP__0094",
+      "PW_APP__0104",
+      "PW_SUBS_0166",
+      "PW_SUBS_0167",
+      "PW_SUBS_0183"
+    ]
+  },
+  "outcome_audit": {
+    "audit_sample_size": 100,
+    "outcome_distribution": {
+      "UNRESOLVED_OPEN": 54,
+      "LIKELY_RESOLVED": 16,
+      "ESCALATED": 24,
+      "RESOLVED": 6
+    },
+    "estimated_inference_validity": 0.94,
+    "audit_notes": "100 randomly sampled conversations inspected. 94% concordance between automated heuristic and human domain interpretation."
+  },
+  "top_15_active_pathways": [
+    {
+      "id": "PW_ACCO_0155",
+      "intent": "ACCOUNT_ACCESS_AUTH",
+      "action": "REQUEST_INFO_AND_REDIRECT_DM",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": false,
+        "billing_related": false,
+        "device_type": "unknown"
+      },
+      "evidence_count": 973,
+      "confidence": 0.6988,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PW_GENE_0070",
+      "intent": "GENERAL_INQUIRY_FEEDBACK",
+      "action": "REQUEST_INFO_AND_REDIRECT_DM",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": false,
+        "billing_related": false,
+        "device_type": "unknown"
+      },
+      "evidence_count": 794,
+      "confidence": 0.6735,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PW_SUBS_0043",
+      "intent": "SUBSCRIPTION_BILLING_PREMIUM",
+      "action": "REQUEST_INFO_AND_REDIRECT_DM",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": false,
+        "billing_related": true,
+        "device_type": "unknown"
+      },
+      "evidence_count": 741,
+      "confidence": 0.6962,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PW_SUBS_0261",
+      "intent": "SUBSCRIPTION_BILLING_PREMIUM",
+      "action": "REQUEST_INFO_AND_REDIRECT_DM",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": false,
+        "billing_related": false,
+        "device_type": "unknown"
+      },
+      "evidence_count": 517,
+      "confidence": 0.695,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PW_GENE_0057",
+      "intent": "GENERAL_INQUIRY_FEEDBACK",
+      "action": "REDIRECT_DM",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": false,
+        "billing_related": false,
+        "device_type": "unknown"
+      },
+      "evidence_count": 482,
+      "confidence": 0.6868,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PW_FAMI_0215",
+      "intent": "FAMILY_PLAN_SETUP",
+      "action": "REQUEST_INFO_AND_REDIRECT_DM",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": false,
+        "billing_related": false,
+        "device_type": "unknown"
+      },
+      "evidence_count": 396,
+      "confidence": 0.701,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PW_GENE_0023",
+      "intent": "GENERAL_INQUIRY_FEEDBACK",
+      "action": "ESCALATE_INTERNAL",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": false,
+        "billing_related": false,
+        "device_type": "unknown"
+      },
+      "evidence_count": 352,
+      "confidence": 0.6195,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PW_STUD_0294",
+      "intent": "STUDENT_DISCOUNT_HULU",
+      "action": "REQUEST_INFO_AND_REDIRECT_DM",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": false,
+        "billing_related": true,
+        "device_type": "unknown"
+      },
+      "evidence_count": 286,
+      "confidence": 0.6965,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PW_STUD_0114",
+      "intent": "STUDENT_DISCOUNT_HULU",
+      "action": "REQUEST_INFO_AND_REDIRECT_DM",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": false,
+        "billing_related": false,
+        "device_type": "unknown"
+      },
+      "evidence_count": 273,
+      "confidence": 0.6985,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PW_ACCO_0253",
+      "intent": "ACCOUNT_ACCESS_AUTH",
+      "action": "REDIRECT_DM",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": false,
+        "billing_related": false,
+        "device_type": "unknown"
+      },
+      "evidence_count": 235,
+      "confidence": 0.708,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PW_PLAY_0116",
+      "intent": "PLAYLIST_LIBRARY_CATALOG",
+      "action": "REQUEST_INFO_AND_REDIRECT_DM",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": false,
+        "billing_related": false,
+        "device_type": "unknown"
+      },
+      "evidence_count": 206,
+      "confidence": 0.6894,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PW_SUBS_0217",
+      "intent": "SUBSCRIPTION_BILLING_PREMIUM",
+      "action": "REDIRECT_DM",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": false,
+        "billing_related": true,
+        "device_type": "unknown"
+      },
+      "evidence_count": 179,
+      "confidence": 0.6928,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PW_SUBS_0164",
+      "intent": "SUBSCRIPTION_BILLING_PREMIUM",
+      "action": "REQUEST_INFO_AND_REDIRECT_DM",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": true,
+        "billing_related": true,
+        "device_type": "unknown"
+      },
+      "evidence_count": 169,
+      "confidence": 0.6947,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PW_PLAY_0296",
+      "intent": "PLAYBACK_STREAMING_AUDIO",
+      "action": "REQUEST_INFORMATION",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": false,
+        "billing_related": false,
+        "device_type": "iPhone"
+      },
+      "evidence_count": 162,
+      "confidence": 0.5616,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "PW_PLAY_0040",
+      "intent": "PLAYLIST_LIBRARY_CATALOG",
+      "action": "ESCALATE_INTERNAL",
+      "conditions": {
+        "info_provided": true,
+        "troubleshoot_attempted": false,
+        "issue_recurring": false,
+        "billing_related": false,
+        "device_type": "unknown"
+      },
+      "evidence_count": 159,
+      "confidence": 0.6137,
+      "status": "ACTIVE"
+    }
+  ]
+}

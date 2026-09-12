@@ -1,0 +1,39 @@
+{
+  "raw_dataset": {
+    "total_rows": 2811774,
+    "unique_authors": 746146,
+    "inbound_count": 1537843,
+    "outbound_count": 1273931,
+    "date_range": {
+      "min": "2014-05-15 00:00:00",
+      "max": "2017-12-03 23:59:59"
+    },
+    "top_brands": {
+      "AmazonHelp": 169840,
+      "AppleSupport": 106886,
+      "Uber_Support": 56270,
+      "SpotifyCares": 37627,
+      "Delta": 34704
+    },
+    "missing_parent_count": 783772,
+    "missing_response_count": 2439128
+  },
+  "spotifycares_corpus": {
+    "total_filtered_rows": 91081,
+    "total_outbound_tweets": 42915,
+    "total_inbound_tweets": 48166,
+    "total_support_agent_turns": 42915,
+    "total_reconstructed_threads": 28187,
+    "single_turn_threads": 20002,
+    "multi_turn_threads": 8185,
+    "date_range": {
+      "min": "2014-05-15 23:34:20",
+      "max": "2017-12-03 22:56:04"
+    },
+    "thread_length_stats": {
+      "mean_agent_turns": 1.5225103771242061,
+      "median_agent_turns": 1.0,
+      "max_agent_turns": 158
+    }
+  }
+}
