@@ -59,11 +59,17 @@ class AgentActionExtractor:
     @classmethod
     def extract_action(cls, agent_text: str) -> Dict[str, Any]:
         t = agent_text.lower()
+        t_no_url = re.sub(r'https?://\S+', '', t)
         
-        has_dm = bool(re.search(r'\b(dm|direct message|private message|pm)\b', t)) or ('t.co' in t and ('dm' in t or 'ldfdzrinat' in t or 'join us in a dm' in t))
-        has_question = '?' in t or bool(re.search(r'\b(which|what|could you let us know|let us know|tell us|send us|share|confirm|are you on|have you tried|can you check|could you confirm)\b', t))
+        # Word boundary DM check on non-URL text to prevent t.co hash substring collisions
+        has_dm = bool(re.search(r'\b(dm|direct message|private message|pm|join us in a dm)\b', t_no_url)) or 'ldfdzrinat' in t or 'twitter.com/messages' in t
+        
+        # Strip closing courtesy phrases to prevent 'anything else' / 'give us a shout' false positives
+        t_no_courtesy = re.sub(r'\b(if (there\'s|you need) anything else|let us know if there\'s anything else|anything else (we can|that we can)|just give us a shout)\b.*', '', t_no_url)
+        has_question = '?' in t_no_courtesy or bool(re.search(r'\b(which|what|could you let us know|let us know|tell us|send us|(can you|could you|please) share|confirm|are you on|have you tried|can you check|could you confirm)\b', t_no_courtesy))
+        
         has_restart = bool(re.search(r'\b(restart|reboot|turn off and on|power cycle|force restart|turn your device off)\b', t))
-        has_update = bool(re.search(r'\b(update|latest version|update to|app store|play store|latest update)\b', t)) and not bool(re.search(r'\b(since the update|after the update|with the update)\b', t))
+        has_update = bool(re.search(r'\b(update to|latest version|update the app|update your|app store|play store|latest update)\b', t)) and not bool(re.search(r'\b(since the update|after the update|with the update|was it after|after an app update)\b', t))
         has_reinstall = bool(re.search(r'\b(clean reinstall|reinstall|uninstall and reinstall|delete and reinstall|delete the app|re-install)\b', t))
         has_instruction = bool(re.search(r'\b(settings\s*>|tap|select|go to|click|check out|steps|guide|article|try this|head over to|here\'s how)\b', t)) or ('http' in t and not has_dm)
         has_catalog = bool(re.search(r'\b(music licensing|content availability|rights|licensing agreements|pass that suggestion|catalog|distributor|aggregator)\b', t))
@@ -91,7 +97,7 @@ class AgentActionExtractor:
             action_name = 'EXPLAIN_POLICY_OR_CATALOG'
             evidence = re.search(r'\b(music licensing|content availability|rights|licensing agreements|pass that suggestion|catalog|distributor|aggregator)\b', t).group(0)
             confidence = 0.88
-        elif has_dm and has_question:
+        elif has_dm and (has_question or bool(re.search(r'\b(email|username|account|country|screenshot|details|address|statement)\b', t_no_url))):
             action_name = 'REQUEST_INFO_AND_REDIRECT_DM'
             evidence = "Asked diagnostic details and provided DM routing link"
             confidence = 0.93

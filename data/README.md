@@ -14,7 +14,8 @@ This directory contains the processed data splits, samples, and golden evaluatio
   * `val_conversations.jsonl`: Chronological Validation split (middle 15%, 4,228 conversations).
   * `test_conversations.jsonl`: Chronological Test split (latest 15%, 4,229 conversations).
 * **`golden/`**:
-  * `golden_set.csv`: 207 hand-labeled, stratified gold test cases covering common intents, rare intents, high-risk security disputes, pathway conflicts, and unmapped edge cases.
+  * `golden_set.csv`: 207 hand-labeled, stratified gold test cases covering common intents, rare intents, high-risk security disputes, pathway conflicts, and unmapped edge cases (reconciled ground truth).
+  * `golden_set_prereconciliation.csv`: Historical pre-reconciliation archive of the 207 cases before the 12 manual review overrides were applied; retained strictly for provenance and audit trail purposes (not loaded by any evaluation scripts).
   * `drift_challenge_set.csv`: 35 targeted temporal drift challenge cases.
   * `ANNOTATION_GUIDE.md`: Comprehensive ground truth annotation definitions, inclusion/exclusion criteria, and decision standards.
 

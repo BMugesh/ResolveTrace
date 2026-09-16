@@ -140,7 +140,9 @@ with tabs[0]:
                 intent=intent,
                 state=state,
                 action=eval_res['recommended_action'],
-                matched_pathway=matched_p
+                matched_pathway=matched_p,
+                customer_text=customer_query,
+                decision=eval_res['decision']
             )
 
         # Display Top Decision Banner

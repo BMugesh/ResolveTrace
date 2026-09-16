@@ -68,6 +68,9 @@ def run_evaluation():
 
     print("=" * 95)
     print(f"\nHuman vs Judge Agreement (40 cases): Spearman rho = {benchmark_output['human_judge_agreement']['spearman_rho']:.3f}, MAE = {benchmark_output['human_judge_agreement']['mae']:.3f}")
+    if 'significance_tests' in benchmark_output:
+        sig = benchmark_output['significance_tests']['mcnemar_pathway_accuracy']
+        print(f"McNemar Significance (RT vs RAG): {sig['p_value_display']} (exact p = {sig['exact_p_value']:.4f}, chi2 = {sig['chi2_stat']:.3f}, discordant = {sig['discordant_pairs']})")
 
     # Print Stratified Pathway Accuracy Table
     print("\n" + "=" * 80)

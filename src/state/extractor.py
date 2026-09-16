@@ -15,7 +15,8 @@ class StateExtractor:
         ('Android', r'\b(android|samsung|galaxy|pixel|huawei|xiaomi|nexus|oneplus|lg|motorola|xperia|htc)\b'),
         ('Windows/PC', r'\b(windows|win10|win11|win8|win7|pc|laptop|desktop|surface)\b'),
         ('Audio/Accessory', r'\b(speaker|bluetooth|echo|alexa|sonos|carplay|android auto|headphone|earbuds|airpod|airpods|headset|soundbar|stereo)\b'),
-        ('Smart TV/Console', r'\b(ps4|ps5|playstation|xbox|roku|smart tv|chromecast|firetv|fire tv)\b')
+        ('Smart TV/Console', r'\b(ps4|ps5|playstation|xbox|roku|smart tv|chromecast|firetv|fire tv)\b'),
+        ('Mobile/Phone', r'\b(phone|mobile|smartphone|cellphone|cell|handset|cellular|4g|3g|lte|wi-?fi)\b')
     ]
 
     @classmethod

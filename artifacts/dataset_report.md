@@ -1,6 +1,6 @@
 # ResolveTrace — SpotifyCares Dataset Inspection Report
 
-**Generated at**: 2026-09-12 11:11:16  
+**Generated at**: 2026-09-14 20:03:17  
 **Inspection Script**: `scripts/inspect_dataset.py`
 
 ---

@@ -34,5 +34,26 @@ class TestDecisionEngine(unittest.TestCase):
         res = self.engine.evaluate_case(msg, "GENERAL_INQUIRY_FEEDBACK", 0.20, state)
         self.assertEqual(res['decision'], 'UNKNOWN')
 
+    def test_api_escalate_and_unknown_safety_tag(self):
+        from fastapi.testclient import TestClient
+        from app.api import app
+        client = TestClient(app)
+
+        # 1. Hacked account -> ESCALATE
+        res_esc = client.post('/evaluate', json={'customer_message': 'someone hacked my account and changed the email please help'})
+        self.assertEqual(res_esc.status_code, 200)
+        data_esc = res_esc.json()
+        self.assertEqual(data_esc['decision'], 'ESCALATE')
+        self.assertTrue(data_esc['draft_reply'].startswith('[ESCALATE:'))
+        self.assertNotIn('/SC', data_esc['draft_reply'])
+
+        # 2. Out of domain -> UNKNOWN
+        res_unk = client.post('/evaluate', json={'customer_message': 'Where can I buy a refrigerator with bitcoin cryptocurrency'})
+        self.assertEqual(res_unk.status_code, 200)
+        data_unk = res_unk.json()
+        self.assertEqual(data_unk['decision'], 'UNKNOWN')
+        self.assertTrue(data_unk['draft_reply'].startswith('[UNKNOWN:'))
+        self.assertNotIn('/SC', data_unk['draft_reply'])
+
 if __name__ == '__main__':
     unittest.main()

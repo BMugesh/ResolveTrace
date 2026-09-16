@@ -60,3 +60,49 @@ class EvaluationMetrics:
             'unsafe_auto_count': unsafe_auto_count,
             'total_cases': total
         }
+
+    @staticmethod
+    def compute_significance_mcnemar(rt_correct: List[bool], rag_correct: List[bool]) -> Dict[str, Any]:
+        """
+        Computes exact McNemar paired test and Edwards chi-squared test between ResolveTrace and Semantic RAG.
+        """
+        from scipy import stats
+        a = sum(1 for r, t in zip(rag_correct, rt_correct) if r and t)
+        b = sum(1 for r, t in zip(rag_correct, rt_correct) if r and not t)
+        c = sum(1 for r, t in zip(rag_correct, rt_correct) if not r and t)
+        d = sum(1 for r, t in zip(rag_correct, rt_correct) if not r and not t)
+        
+        discordant = b + c
+        if discordant == 0:
+            return {
+                'both_correct': a,
+                'rag_only_correct': b,
+                'rt_only_correct': c,
+                'both_incorrect': d,
+                'discordant_pairs': 0,
+                'exact_p_value': 1.0,
+                'chi2_stat': 0.0,
+                'chi2_p_value': 1.0,
+                'p_value_display': "p = 1.000"
+            }
+
+        binom_res = stats.binomtest(b, discordant, p=0.5, alternative='two-sided')
+        exact_p = float(binom_res.pvalue)
+
+        chi2_corr = ((abs(b - c) - 1) ** 2) / discordant
+        p_corr = float(stats.chi2.sf(chi2_corr, df=1))
+
+        p_display = f"p = {exact_p:.4f}" if exact_p < 0.01 else f"p = {exact_p:.3f}"
+
+        return {
+            'both_correct': a,
+            'rag_only_correct': b,
+            'rt_only_correct': c,
+            'both_incorrect': d,
+            'contingency_table': [[a, b], [c, d]],
+            'discordant_pairs': discordant,
+            'exact_p_value': float(round(exact_p, 6)),
+            'chi2_stat': float(round(chi2_corr, 4)),
+            'chi2_p_value': float(round(p_corr, 6)),
+            'p_value_display': p_display
+        }

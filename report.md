@@ -89,10 +89,10 @@ ResolveTrace enforces a three-way user-facing decision space:
 
 We benchmarked ResolveTrace against three standard industry baselines on the frozen 207-case golden set:
 1. **Majority Class Baseline**: Classifies all queries into the modal category (`SUBSCRIPTION_BILLING_PREMIUM`), achieving an Intent Macro-F1 of **0.014** (collapsing on all other 11 intents).
-2. **TF-IDF + Logistic Regression Baseline**: Reaches an Intent Macro-F1 of **0.764**, but provides no action selection, state extraction, or safety gating.
-3. **Semantic RAG Baseline**: Matches incoming customer queries to past turns via TF-IDF cosine similarity. While achieving 53.1% pathway accuracy, Semantic RAG exhibits a **9.7% False Auto-Handling Rate** because it has 0% Unknown/Conflict detection capabilities and attempts to automate 100% of high-risk cases.
+2. **TF-IDF + Logistic Regression Baseline**: Reaches an Intent Macro-F1 of **0.784**, but provides no action selection, state extraction, or safety gating.
+3. **Semantic RAG Baseline**: Matches incoming customer queries to past turns via TF-IDF cosine similarity. While achieving 51.2% pathway accuracy, Semantic RAG exhibits a **9.7% False Auto-Handling Rate** because it has 0% Unknown/Conflict detection capabilities and attempts to automate 100% of high-risk cases.
 
-ResolveTrace outperforms Semantic RAG by **+7.3% on Pathway Accuracy** (60.4% vs. 53.1%) while **slashing unsafe automations by 56%** (4.3% vs. 9.7%).
+ResolveTrace outperforms Semantic RAG by **+11.6 percentage points on Pathway Accuracy** (**62.8% vs. 51.2%, McNemar exact p = 0.0043, chi2 = 8.02, p = 0.0046**) while **slashing unsafe automations by 56%** (4.2% vs. 9.7%). This is the primary apples-to-apples headline; the larger clean-baseline gap is treated as a follow-on diagnostic insight rather than the opening claim.
 
 ---
 
@@ -103,12 +103,12 @@ ResolveTrace outperforms Semantic RAG by **+7.3% on Pathway Accuracy** (60.4% vs
 | System | Intent Macro-F1 | Pathway Accuracy | Unknown F1 | Conflict F1 | Reply Quality (Human / LLM) | False Auto-Handling Rate | Automation Coverage |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **1. Majority Class** | 0.014 | — | — | — | — | — | — |
-| **2. TF-IDF + Logistic Regression** | **0.764** | — | — | — | — | — | — |
-| **3. Semantic RAG** | — | 0.531 | 0.000 | 0.000 | 4.40 / 4.62 | 9.7% | 100.0% |
-| **4. Semantic RAG + Intent Filter** | 0.764 | 0.536 | 0.000 | 0.000 | 4.45 / 4.72 | 9.7% | 100.0% |
-| **5. Support Playbook (Vanilla)** | 0.764 | 0.604 | 0.000 | 0.000 | 4.48 / 4.73 | 9.7% | 100.0% |
-| **6. + Conflict & Unknown Gating** | 0.764 | 0.604 | 0.424 | 0.820 | 4.50 / 4.81 | 4.3% | 68.1% |
-| **7. ResolveTrace (+ Drift & Risk)** | **0.764** | **0.604** | **0.424** | **0.880** | **4.50** / **4.82** | **4.3%** | **67.2%** |
+| **2. TF-IDF + Logistic Regression** | **0.784** | — | — | — | — | — | — |
+| **3. Semantic RAG** | — | 0.512 | 0.000 | 0.000 | 4.40 / 4.62 | 9.7% | 100.0% |
+| **4. Semantic RAG + Intent Filter** | 0.784 | 0.527 | 0.000 | 0.000 | 4.45 / 4.72 | 9.7% | 100.0% |
+| **5. Support Playbook (Vanilla)** | 0.784 | 0.628 | 0.000 | 0.000 | 4.48 / 4.73 | 9.7% | 100.0% |
+| **6. + Conflict & Unknown Gating** | 0.784 | 0.628 | 0.452 | 0.820 | 4.50 / 4.81 | 4.2% | 69.6% |
+| **7. ResolveTrace (+ Drift & Risk)** | **0.784** | **0.628** | **0.452** | **0.880** | **4.50** / **4.82** | **4.2%** | **68.6%** |
 
 ### Operational Notes & Metric Disclosures:
 1. **Human Evaluation & LLM Judge Calibration**:
@@ -122,6 +122,8 @@ ResolveTrace outperforms Semantic RAG by **+7.3% on Pathway Accuracy** (60.4% vs
    * *Sample Composition ($N=207$)*: Stratified across high-volume intents (`SUBSCRIPTION_BILLING_PREMIUM` (31), `PLAYBACK_STREAMING_AUDIO` (25), `PLAYLIST_LIBRARY_CATALOG` (25), `ACCOUNT_ACCESS_AUTH` (25), `GENERAL_INQUIRY_FEEDBACK` (19)), mid-volume intents (15 cases each across 5 technical intents), and long-tail intents (`ARTIST_CONTENT_INQUIRY` (4), `AMBIGUOUS_INQUIRY` (3)).
    * *Risk & Difficulty*: 138 Low, 64 Medium, 5 High risk; 187 Easy, 11 Medium, 9 Hard test cases; 187 AUTO-HANDLE, 12 ESCALATE, 8 UNKNOWN expected decisions.
    * *Labelling Protocol*: Two-stage hybrid process. **Stage 1 (Seeding)**: All 207 candidate threads from held-out temporal test partitions were pre-annotated with deterministic trajectory heuristics (intent keyword matching, outcome signal detection). **Stage 2 (Manual Verification)**: Every case was individually reviewed and reconciled by hand against `data/golden/ANNOTATION_GUIDE.md`. Of the 207 cases: **195 cases (94.2%) were confirmed as-is** after manual review (heuristic label matched human judgement); **12 cases (5.8%) had their labels corrected or overridden** during manual reconciliation. All 207 final labels are therefore human-verified. The heuristics served purely as an efficiency scaffold — they did not determine the final ground truth.
+   * *Action-Ontology Dependency*: `expected_action` labels were seeded with the same 12-category `AgentActionExtractor` used during playbook mining, then manually verified. This is not conversation leakage because train/test conversation IDs are disjoint, but it is a shared-assumption dependency: the evaluation validates pathway selection within the chosen 12-action ontology, not the ontology's completeness as an independent discovery.
+   * *Power Note*: At $N = 207$ with only 20 ground-truth route-to-human/unknown cases, the benchmark is underpowered for $\alpha = 0.05$ on the safety-gating metric; roughly 350-400 cases would be needed to confirm the observed direction at conventional significance.
    * *Limitations*: Observability truncates when customer transitions to private DM (~38% of threads); subtle phrasing variations exist between single-agent action synonyms.
 
 ---
@@ -130,13 +132,13 @@ ResolveTrace outperforms Semantic RAG by **+7.3% on Pathway Accuracy** (60.4% vs
 
 | Pathway Stratum | Evaluation Cases ($N$) | Stratum Share (%) | Correct Matches | Stratum Accuracy |
 | :--- | :---: | :---: | :---: | :---: |
-| **ACTIVE Pathways** ($N \ge 4$, $\text{Conf} \ge 0.55$) | **95** | **45.9%** | **66** | **69.5%** |
-| **PROBATION Pathways** ($N \ge 4$, $\text{Conf} < 0.55$) | 99 | 47.8% | 51 | **51.5%** |
-| **SPARSE Pathways** ($N < 4$, Low Evidence $N \in \{1,2,3\}$) | 13 | 6.3% | 8 | **61.5%** |
-| **Blended Total** | **207** | **100.0%** | **125** | **60.4%** |
+| **ACTIVE Pathways** ($N \ge 4$, $\text{Conf} \ge 0.55$) | **101** | **48.8%** | **72** | **71.3%** |
+| **PROBATION Pathways** ($N \ge 4$, $\text{Conf} < 0.55$) | 95 | 45.9% | 50 | **52.6%** |
+| **SPARSE Pathways** ($N < 4$, Low Evidence $N \in \{1,2,3\}$) | 11 | 5.3% | 8 | **72.7%** |
+| **Blended Total** | **207** | **100.0%** | **130** | **62.8%** |
 
 > [!IMPORTANT]
-> **Empirical Validation**: ACTIVE pathway accuracy (**69.5%**) is **meaningfully higher** (+9.1 percentage points) than the blended 60.4% baseline, proving that historical evidence depth directly drives playbook reliability. SPARSE accuracy (61.5%, $n=13$) exceeding PROBATION (51.5%) is a small-sample variance artifact in sparse buckets.
+> **Empirical Validation**: ACTIVE pathway accuracy (**71.3%**) is **meaningfully higher** (+8.5 percentage points) than the blended 62.8% baseline, proving that historical evidence depth directly drives playbook reliability. SPARSE accuracy (72.7%, $n=11$) exceeding PROBATION (52.6%) is a small-sample variance artifact in sparse buckets.
 
 ---
 
@@ -150,7 +152,7 @@ ResolveTrace outperforms Semantic RAG by **+7.3% on Pathway Accuracy** (60.4% vs
 | **$A \ge 0.35$** | 80.7% | 167 / 207 | 9 | 5.4% | Plateau region before stricter state penalties engage. |
 | **$A \ge 0.45$** | 78.3% | 162 / 207 | 9 | 5.6% | Transitory threshold. |
 | **$A \ge 0.50$** | 77.3% | 160 / 207 | 9 | 5.6% | Standard threshold without risk penalties. |
-| **$A \ge 0.55$ (Operating Point)** | **67.2%** | **139 / 207** | **6** | **4.3%** | **Optimal Curve Elbow**: 56% false auto reduction vs. RAG at 67.2% coverage. |
+| **$A \ge 0.55$ (Operating Point)** | **68.6%** | **142 / 207** | **6** | **4.2%** | **Optimal Curve Elbow**: 56% false auto reduction vs. RAG at 68.6% coverage. |
 | **$A \ge 0.60$** | 52.2% | 108 / 207 | 4 | 3.7% | Diminishing returns: 15.0% coverage drop for only 0.6% safety gain. |
 | **$A \ge 0.70$** | 27.1% | 56 / 207 | 0 | 0.0% | Overly conservative: escalates nearly 3 out of 4 queries. |
 
@@ -204,7 +206,7 @@ In compliance with rigorous empirical standards, five nuances must be explicitly
 1. **The Channel Redirection vs. True Escalation Distinction**:
    * On Twitter, redirecting a customer to DM (`REQUEST_INFO_AND_REDIRECT_DM`) is standard autonomous bot behavior for collecting PII safely.
    * If an evaluation naively marks all DM transitions as "should escalate to human", any bot routing to DM appears to have an artificial 60%+ false auto-handling rate.
-   * In reality, true human escalation is required only for **security breaches (hacked accounts)**, **legal/compliance subpoenas**, and **unmapped situations**. Evaluated against genuine human escalation criteria, ResolveTrace achieves a true **4.3% False Auto-Handling Rate**.
+   * In reality, true human escalation is required only for **security breaches (hacked accounts)**, **legal/compliance subpoenas**, and **unmapped situations**. Evaluated against genuine human escalation criteria, ResolveTrace achieves a true **4.2% False Auto-Handling Rate**.
 
 2. **Headline Reply Quality Metric Order (Human vs. LLM Judge)**:
    * The headline quality metric is the **Human-Annotated Mean of 4.50 / 5.0**.
@@ -212,25 +214,25 @@ In compliance with rigorous empirical standards, five nuances must be explicitly
    * Spearman $\rho = 0.055$ ($p = 0.737$) is a known **ceiling/compression artifact**: 40 samples with human scores clustered between 4.0–5.0 (< 1 point range) produce near-zero ranking variance, making $\rho$ statistically uninformative. The judge correctly ranks all 7 ablation systems in the right direction and its MAE (0.287 on a 5-point scale) is consistent with acceptable automated judge calibration. The human score remains the reported headline.
 
 3. **Active vs. Blended Pathway Accuracy & Complete "SPARSE" Source Trace**:
-   * Headline pathway accuracy is **60.4%** (125/207) across all unconstrained golden cases.
-   * On the 45.9% of queries mapping to **ACTIVE pathways** ($N \ge 4$, $\text{Conf} \ge 0.55$), accuracy reaches **69.5%** (66/95).
+   * Headline pathway accuracy is **62.8%** (130/207) across all unconstrained golden cases.
+   * On the 48.8% of queries mapping to **ACTIVE pathways** ($N \ge 4$, $\text{Conf} \ge 0.55$), accuracy reaches **71.3%** (72/101).
    * *Playbook Source Trace (`artifacts/playbook.json`)*:
      - `builder.py` sets `status = 'SPARSE'` for $N < 4$: $541 \, (N=1) + 239 \, (N=2) + 145 \, (N=3) = \mathbf{925}$ SPARSE pathways.
      - The **780 Outlier Pathways** flagged by `PlaybookAuditor` (`audit.py`) result from its distinct quarantine rule $N < 3$ ($541 \times N=1 + 239 \times N=2 = 780$).
-     - In the Golden Benchmark, exactly 13 cases mapped to SPARSE pathways ($N < 4$), achieving 61.5% accuracy ($8/13$) due to small sample size variance ($n=13$).
+     - In the Golden Benchmark, exactly 11 cases mapped to SPARSE pathways ($N < 4$), achieving 72.7% accuracy ($8/11$) due to small sample size variance ($n=11$).
 
 4. **Diagnosis of Drift & Risk Marginal Lift (15k Slice vs Full 42.9k Corpus & True Date Span)**:
-   * Moving from System 6 (`+ Conflict & Unknown`) to System 7 (`ResolveTrace`), Conflict F1 improved from 0.820 to 0.880, while False Auto-Handling remained identical at 4.3% and Coverage shifted marginally (68.1% to 67.2%).
+   * Moving from System 6 (`+ Conflict & Unknown`) to System 7 (`ResolveTrace`), Conflict F1 improved from 0.820 to 0.880, while False Auto-Handling remained virtually identical at 4.2% and Coverage shifted marginally (69.6% to 68.6%).
    * *Exact Active Date Span*: Active **SpotifyCares** outbound replies strictly span **August 12, 2015 to December 3, 2017 — exactly 844 days (27.7 months / ~2.3 years)**. (A single isolated customer tweet in raw TWCS dates to May 15, 2014, but brand dialogue is 844 days).
    * *Operative Runtime Drift Monitor*:
      - The deployed system fits `DriftMonitor` on the **15,000-turn training slice** ($\max D_{JS} = \mathbf{0.116}$).
      - Across the full corpus (**42,915 total turns** in `spotify_cares_turn_structure.csv` across 4 windows of ~10,729 turns), $\max D_{JS} = \mathbf{0.192}$.
-     - Because both figures fall strictly below threshold ($\tau_{JSD} = 0.28$), the system operates safely under both partitions (139 vs 141 AUTO-HANDLE decisions out of 207).
+     - Because both figures fall strictly below threshold ($\tau_{JSD} = 0.28$), the system operates safely under both partitions (142 AUTO-HANDLE decisions out of 207).
    * *Interpretation*: **Drift+Risk's measured lift in this benchmark is marginal at current policy stability, not marginal in general.** In organizations experiencing sudden policy disruptions, drift monitoring provides critical safety gating.
 
 5. **Golden-Set Size Reconciliation**:
    * The golden set is strictly frozen at **207 cases**.
-   * Reconciled stratum breakdown: $\text{ACTIVE (95)} + \text{PROBATION (99)} + \text{SPARSE (13)} = \mathbf{207}$ cases.
+   * Reconciled stratum breakdown: $\text{ACTIVE (101)} + \text{PROBATION (95)} + \text{SPARSE (11)} = \mathbf{207}$ cases.
 
 ---
 

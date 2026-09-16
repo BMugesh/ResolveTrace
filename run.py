@@ -10,6 +10,21 @@ def main():
             print('Launching Streamlit Web Dashboard...')
             subprocess.run(['streamlit', 'run', 'app/ui.py'])
             return
+        elif arg in ('--api', '-a', 'api'):
+            print('Starting FastAPI backend on http://localhost:8000...')
+            subprocess.run([sys.executable, '-m', 'uvicorn', 'app.api:app', '--reload', '--port', '8000'])
+            return
+        elif arg in ('--dev', '-d', 'dev', 'all'):
+            print('🚀 Starting FastAPI backend on http://localhost:8000...')
+            backend_proc = subprocess.Popen([sys.executable, '-m', 'uvicorn', 'app.api:app', '--reload', '--port', '8000'])
+            print('🚀 Starting Next.js frontend on http://localhost:3000...')
+            try:
+                subprocess.run('npm --prefix frontend run dev', shell=True)
+            except KeyboardInterrupt:
+                pass
+            finally:
+                backend_proc.terminate()
+            return
         elif arg in ('--test', '-t', 'test'):
             print('Running all unit tests...')
             subprocess.run([sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_*.py'])

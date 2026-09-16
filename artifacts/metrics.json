@@ -10,7 +10,7 @@
       "coverage": null
     },
     "TF-IDF + LR": {
-      "intent_macro_f1": 0.7644,
+      "intent_macro_f1": 0.7844,
       "pathway_accuracy": null,
       "unknown_f1": null,
       "conflict_f1": null,
@@ -20,7 +20,7 @@
     },
     "Semantic RAG": {
       "intent_macro_f1": null,
-      "pathway_accuracy": 0.5314,
+      "pathway_accuracy": 0.5121,
       "unknown_f1": 0.0,
       "conflict_f1": 0.0,
       "reply_quality": 4.62,
@@ -28,8 +28,8 @@
       "coverage": 1.0
     },
     "RAG + Intent": {
-      "intent_macro_f1": 0.7644,
-      "pathway_accuracy": 0.5362,
+      "intent_macro_f1": 0.7844,
+      "pathway_accuracy": 0.5266,
       "unknown_f1": 0.0,
       "conflict_f1": 0.0,
       "reply_quality": 4.72,
@@ -37,8 +37,8 @@
       "coverage": 1.0
     },
     "Support Playbook": {
-      "intent_macro_f1": 0.7644,
-      "pathway_accuracy": 0.6039,
+      "intent_macro_f1": 0.7844,
+      "pathway_accuracy": 0.628,
       "unknown_f1": 0.0,
       "conflict_f1": 0.0,
       "reply_quality": 4.73,
@@ -46,23 +46,53 @@
       "coverage": 1.0
     },
     "+ Conflict/Unknown": {
-      "intent_macro_f1": 0.7644,
-      "pathway_accuracy": 0.6039,
-      "unknown_f1": 0.4242,
+      "intent_macro_f1": 0.7844,
+      "pathway_accuracy": 0.628,
+      "unknown_f1": 0.4516,
       "conflict_f1": 0.82,
       "reply_quality": 4.81,
-      "false_auto_handling": 0.0426,
-      "coverage": 0.6812
+      "false_auto_handling": 0.0417,
+      "coverage": 0.6957
     },
     "+ Drift/Risk (ResolveTrace)": {
-      "intent_macro_f1": 0.7644,
-      "pathway_accuracy": 0.6039,
-      "unknown_f1": 0.4242,
+      "intent_macro_f1": 0.7844,
+      "pathway_accuracy": 0.628,
+      "unknown_f1": 0.4516,
       "conflict_f1": 0.88,
       "reply_quality": 4.82,
-      "false_auto_handling": 0.0432,
-      "coverage": 0.6715
+      "false_auto_handling": 0.0423,
+      "coverage": 0.686
     }
+  },
+  "significance_tests": {
+    "mcnemar_pathway_accuracy": {
+      "both_correct": 85,
+      "rag_only_correct": 21,
+      "rt_only_correct": 45,
+      "both_incorrect": 56,
+      "contingency_table": [
+        [
+          85,
+          21
+        ],
+        [
+          45,
+          56
+        ]
+      ],
+      "discordant_pairs": 66,
+      "exact_p_value": 0.004272,
+      "chi2_stat": 8.0152,
+      "chi2_p_value": 0.004639,
+      "p_value_display": "p = 0.0043"
+    }
+  },
+  "human_annotation": {
+    "total_cases": 207,
+    "human_extractor_match": 195,
+    "agreement": 0.942,
+    "overrides": 12,
+    "cohens_kappa": 0.9237
   },
   "human_judge_agreement": {
     "spearman_rho": 0.0548,
@@ -73,28 +103,28 @@
   },
   "stratified_pathway_accuracy": {
     "ACTIVE": {
-      "cases": 95,
-      "share": 0.4589,
-      "correct": 66,
-      "accuracy": 0.6947
+      "cases": 101,
+      "share": 0.4879,
+      "correct": 72,
+      "accuracy": 0.7129
     },
     "PROBATION": {
-      "cases": 99,
-      "share": 0.4783,
-      "correct": 51,
-      "accuracy": 0.5152
+      "cases": 95,
+      "share": 0.4589,
+      "correct": 50,
+      "accuracy": 0.5263
     },
     "SPARSE": {
-      "cases": 13,
-      "share": 0.0628,
+      "cases": 11,
+      "share": 0.0531,
       "correct": 8,
-      "accuracy": 0.6154
+      "accuracy": 0.7273
     }
   },
   "summary": {
     "total_test_cases": 207,
-    "final_coverage": 0.6715,
-    "final_false_auto_handling_rate": 0.0432,
-    "final_unknown_f1": 0.4242
+    "final_coverage": 0.686,
+    "final_false_auto_handling_rate": 0.0423,
+    "final_unknown_f1": 0.4516
   }
 }

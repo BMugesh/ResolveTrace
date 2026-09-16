@@ -23,6 +23,13 @@ class TestStateExtraction(unittest.TestCase):
         self.assertFalse(state.troubleshoot_attempted)
         self.assertIn('billing_related', state.evidence)
 
+    def test_generic_phone_device_context_is_extracted(self):
+        text = "my songs stop downloading even after I restarted the app and my phone"
+        state = StateExtractor.extract_from_turns([text])
+
+        self.assertEqual(state.device_type, 'Mobile/Phone')
+        self.assertEqual(state.evidence['device_type'], 'phone')
+
     def test_ambiguous_sparse_text(self):
         text = "@SpotifyCares help"
         state = StateExtractor.extract_from_turns([text])
