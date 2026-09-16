@@ -9,17 +9,39 @@
 
 ---
 
-## 📋 Assessment Deliverables & Quick Verification
+## Deliverables
 
-This repository is structured to directly fulfill all 5 required deliverables with clean, verifiable code and documentation:
+1. **Repo with a runnable pipeline**
+   * Reproduces headline results in **under 15 minutes** (~45s end-to-end on standard hardware via `python scripts/evaluate.py` or `python run.py --eval`).
+   * Instructions: see [Reproduce in Under 15 Minutes](#reproduce-in-under-15-minutes).
 
-| Deliverable | Description & Artifact Location | Quick Verification Command |
+2. **Golden evaluation set — 150–250 hand-labelled examples built yourself, with a short note on how sampled and labelled**
+   * **207 hand-labelled examples** (within 150–250 range) stratified across 12 intents, 3 risk tiers, and 3 difficulty tiers in [`data/golden/golden_set.csv`](data/golden/golden_set.csv).
+   * Note on sampling and labelling: documented in [`data/golden/ANNOTATION_GUIDE.md`](data/golden/ANNOTATION_GUIDE.md) and [`report.md` (Section 6)](report.md#6-full-ablation-study--empirical-metrics).
+
+3. **Evaluation harness — automated metrics + an LLM-as-judge rubric for reply quality, including evidence of how well judge agrees with human**
+   * Automated metrics: Intent Macro-F1, Pathway Accuracy, Unknown F1, Conflict F1, Safety (False Auto-Handling Rate vs Coverage), and McNemar statistical significance test in [`scripts/evaluate.py`](scripts/evaluate.py).
+   * LLM-as-judge rubric for reply quality: 5-dimension rubric in [`src/evaluation/judge_rubric.md`](src/evaluation/judge_rubric.md) implemented in [`src/evaluation/llm_judge.py`](src/evaluation/llm_judge.py).
+   * Human-judge agreement evidence: calibrated across 40 human-evaluated samples with **MAE = 0.287** and Spearman $\rho = 0.055$ (scale compression effect documented in [`report.md`](report.md)).
+
+4. **Report (max 6 pages / or a README section) covering:**
+   * Full technical report located in [`report.md`](report.md) (and summarized in README):
+     - **Problem framing**: what "good" means for SpotifyCares, and what was chosen not to build ([`report.md` §1](report.md#1-problem-what-does-good-support-mean-for-spotifycares)).
+     - **Results vs. at least two baselines**: Majority baseline (F1 = 0.014) and TF-IDF + Logistic Regression (F1 = 0.784), plus Semantic RAG (Acc = 51.2%) ([`report.md` §5-6](report.md#5-results-vs-baselines)).
+     - **Failure analysis**: top 5 failure modes with real examples, root causes, and hypotheses ([`report.md` §7](report.md#7-failure-analysis-top-5-failure-modes)).
+     - **"What is misleading about my headline number?"**: mandatory section detailing DM routing vs true escalation, human vs LLM quality scores, active vs blended accuracy, drift sensitivity, and golden set reconciliation ([`report.md` §8](report.md#8-what-is-misleading-about-my-headline-number)).
+     - **What you'd do next with one more week**: 4 prioritized roadmap items ([`report.md` §9](report.md#9-what-id-do-with-one-more-week)).
+
+5. **Decision log — a plain list of the 10–15 non-obvious decisions made and why (bullet points)**
+   * Plain list of **15 non-obvious engineering decisions**, trade-offs, and empirical rationales in [`decision_log.md`](decision_log.md).
+
+| Deliverable | Location | Verification Command |
 | :--- | :--- | :--- |
-| **1. Runnable Pipeline** | Complete pipeline reproducible in **under 15 minutes** (takes **~41s** end-to-end on standard hardware). Complete step-by-step instructions below. | `python scripts/evaluate.py`<br>*(or `python run.py --eval`)* |
-| **2. Golden Evaluation Set** | **207 hand-labelled examples** (within the 150–250 range) stratified across 12 intents, 3 risk tiers, and 3 difficulty tiers. Documented in [`data/golden/golden_set.csv`](data/golden/golden_set.csv) and [`data/golden/ANNOTATION_GUIDE.md`](data/golden/ANNOTATION_GUIDE.md). | `python -c "import pandas as pd; df=pd.read_csv('data/golden/golden_set.csv'); print(f'{len(df)} golden cases loaded')"` |
-| **3. Evaluation Harness** | Automated metrics (Intent Macro-F1, Pathway Acc, Unknown F1, Conflict F1, Safety, McNemar test) + 5-dimension LLM-as-judge rubric with human agreement calibration (MAE = 0.287, Spearman $\rho = 0.055$). See [`src/evaluation/judge_rubric.md`](src/evaluation/judge_rubric.md) and [`src/evaluation/llm_judge.py`](src/evaluation/llm_judge.py). | `python scripts/evaluate.py` |
-| **4. Technical Report** | Comprehensive technical report (max 6 pages) covering: problem framing & non-goals, results vs 2 baselines, top 5 failure modes with hypotheses, mandatory *"What is misleading about my headline number?"*, and 1-week roadmap. Located in [`report.md`](report.md). | View [`report.md`](report.md) |
-| **5. Decision Log** | Plain bulleted list of **15 non-obvious engineering decisions**, trade-offs, and empirical rationales. Located in [`decision_log.md`](decision_log.md). | View [`decision_log.md`](decision_log.md) |
+| **1. Runnable Pipeline** | [`scripts/evaluate.py`](scripts/evaluate.py), [`run.py`](run.py) | `python scripts/evaluate.py` *(or `python run.py --eval`)* |
+| **2. Golden Evaluation Set** | [`data/golden/golden_set.csv`](data/golden/golden_set.csv), [`data/golden/ANNOTATION_GUIDE.md`](data/golden/ANNOTATION_GUIDE.md) | `python -c "import pandas as pd; df=pd.read_csv('data/golden/golden_set.csv'); print(f'{len(df)} golden cases loaded')"` |
+| **3. Evaluation Harness** | [`scripts/evaluate.py`](scripts/evaluate.py), [`src/evaluation/judge_rubric.md`](src/evaluation/judge_rubric.md) | `python scripts/evaluate.py` |
+| **4. Technical Report** | [`report.md`](report.md) | View [`report.md`](report.md) |
+| **5. Decision Log** | [`decision_log.md`](decision_log.md) | View [`decision_log.md`](decision_log.md) |
 
 ---
 
